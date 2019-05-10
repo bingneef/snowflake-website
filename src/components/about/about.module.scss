@@ -1,0 +1,35 @@
+.separator {
+  height: 24px;
+}
+
+.isLink {
+  color: white;
+  text-decoration: underline;
+  &:hover {
+    color: #efefef !important;
+    cursor: pointer;
+  }
+}
+
+.socialIcons {
+  margin-top: 12px;
+  img {
+    margin-right: 12px;
+    width: 15%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.dataLine {
+  strong {
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .fa {
+    text-align: left;
+    width: 1.5em;
+  }
+}

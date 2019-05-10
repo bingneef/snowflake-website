@@ -1,0 +1,19 @@
+.navItem {
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #f7f7f7 !important;
+  font-weight: 400;
+  &.isActive {
+    color: white !important;
+    font-weight: 700;
+  }
+}
+
+.inverse {
+  color: #55b4e2 !important;
+  font-weight: 400;
+  &.isActive {
+    color: #42afe3 !important;
+    font-weight: 700;
+  }
+}

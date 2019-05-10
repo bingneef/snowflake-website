@@ -1,0 +1,10 @@
+# Editor config
+.vscode
+
+# Log
+yarn-error.log
+
+# Build
+.next
+node_modules
+coverage

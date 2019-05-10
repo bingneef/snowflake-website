@@ -1,0 +1,15 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 42px;
+  background: transparent;
+
+  .nav {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Landing matches the snapshot 1`] = `
+<section
+  className="hero is-fullheight is-info"
+  id="landing"
+>
+  <div
+    className="hero-body"
+  >
+    <div
+      className="container container"
+    >
+      <img
+        className="logo logo"
+        src="/static/assets/images/snowflake.svg"
+      />
+      <h1
+        className="title"
+      >
+        Snowflake Webdesign
+      </h1>
+      <h2
+        className="subtitle"
+      >
+        For a life full of fluffiness
+      </h2>
+    </div>
+  </div>
+  <div
+    className="hero-foot has-text-centered"
+  >
+    <div
+      className="ripplePlaceholder"
+    >
+      <a
+        className="button is-success button nextButton"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-lg fa-arrow-down"
+        />
+      </a>
+      <div
+        className="ripple"
+      />
+      <div
+        className="rippleDelay"
+      />
+    </div>
+  </div>
+</section>
+`;

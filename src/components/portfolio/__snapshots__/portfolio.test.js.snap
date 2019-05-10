@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio matches the snapshot 1`] = `
+<section
+  className="section is-info root"
+  id="portfolio"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="heading"
+    >
+      <h1
+        className="title"
+      >
+        Portfolio
+      </h1>
+      <h2
+        className="subtitle"
+      >
+        Its all about that 
+        <strong>
+          fluffiness
+        </strong>
+        .
+      </h2>
+    </div>
+    <div
+      className="tabs"
+    />
+  </div>
+</section>
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RippleButton matches the snapshot 1`] = `
+<div
+  className="ripplePlaceholder"
+>
+  <a
+    className="button is-success button nextButton"
+    onClick={[Function]}
+  >
+    <i
+      className="fa fa-lg fa-arrow-down"
+    />
+  </a>
+  <div
+    className="ripple"
+  />
+  <div
+    className="rippleDelay"
+  />
+</div>
+`;

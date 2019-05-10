@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar matches the snapshot 1`] = `
+<nav
+  aria-label="main navigation"
+  className="navbar navbar transparent"
+  role="navigation"
+>
+  <a
+    className="navItem isActive"
+    onClick={[Function]}
+  >
+    Home
+  </a>
+  <a
+    className="navItem"
+    onClick={[Function]}
+  >
+    Portfolio
+  </a>
+  <a
+    className="navItem"
+    onClick={[Function]}
+  >
+    About
+  </a>
+  <a
+    className="navItem"
+    href="https://www.github.com/bingneef"
+    target="_blank"
+  >
+    <span
+      className="icon"
+    >
+      <i
+        className="fa fa-github"
+      />
+    </span>
+  </a>
+</nav>
+`;

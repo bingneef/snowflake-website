@@ -1,0 +1,18 @@
+import React from "react";
+import styles from "./{{kebabCase name}}.module.scss";
+
+function {{pascalCase name}} ({ title }: Props) {
+  return <div className={styles.root}>{title}</div>;
+};
+
+interface Props {
+  title?: string;
+}
+
+{{pascalCase name}}.defaultProps = {
+  title: "{{pascalCase name}}"
+};
+
+{{pascalCase name}}.propTypes = {};
+
+export default {{pascalCase name}};
