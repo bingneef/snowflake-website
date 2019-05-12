@@ -1,9 +1,14 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import jump from "jump.js";
 import React, { useEffect, useState } from "react";
 
 import { NavItem } from "./components";
 import styles from "./navbar.module.scss";
+
+library.add(faGithub);
 
 function getYOffset(id: any): number {
   const $el = document.getElementById(id);
@@ -112,7 +117,7 @@ function Navbar() {
         active={activeNavItem === "about"}
       >
         <span className="icon">
-          <i className="fa fa-github" />
+          <FontAwesomeIcon icon={["fab", "github"]} />
         </span>
       </NavItem>
     </nav>

@@ -12,7 +12,7 @@ exports[`About matches the snapshot 1`] = `
       className="container"
     >
       <h1
-        className="title is-1 has-text-centered"
+        className="title is-1 has-text-centered title"
       >
         Whats all this about?
       </h1>
@@ -22,11 +22,11 @@ exports[`About matches the snapshot 1`] = `
         <div
           className="column"
         >
-          <h2
-            className="title"
+          <h1
+            className="title title"
           >
             Who adds the fluffy?
-          </h2>
+          </h1>
           <p>
             Hello! I am an full-stack developer from Noordwijk, Netherlands.
           </p>
@@ -45,11 +45,11 @@ exports[`About matches the snapshot 1`] = `
         <div
           className="column"
         >
-          <h2
-            className="title"
+          <h1
+            className="title title"
           >
             Everyone needs skills!
-          </h2>
+          </h1>
           <div
             className="dataLine"
           >
@@ -57,9 +57,23 @@ exports[`About matches the snapshot 1`] = `
               <strong
                 className="data-line-content"
               >
-                <i
-                  className="fa fa-magic"
-                />
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-magic fa-w-16 "
+                  data-icon="magic"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 96l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zM80 160l26.66-53.33L160 80l-53.34-26.67L80 0 53.34 53.33 0 80l53.34 26.67L80 160zm352 128l-26.66 53.33L352 368l53.34 26.67L432 448l26.66-53.33L512 368l-53.34-26.67L432 288zm70.62-193.77L417.77 9.38C411.53 3.12 403.34 0 395.15 0c-8.19 0-16.38 3.12-22.63 9.38L9.38 372.52c-12.5 12.5-12.5 32.76 0 45.25l84.85 84.85c6.25 6.25 14.44 9.37 22.62 9.37 8.19 0 16.38-3.12 22.63-9.37l363.14-363.15c12.5-12.48 12.5-32.75 0-45.24zM359.45 203.46l-50.91-50.91 86.6-86.6 50.91 50.91-86.6 86.6z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
                  CREATING MAGIC
               </strong>
             </p>
@@ -77,9 +91,23 @@ exports[`About matches the snapshot 1`] = `
               <strong
                 className="data-line-content"
               >
-                <i
-                  className="fa fa-bed"
-                />
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-bed fa-w-20 "
+                  data-icon="bed"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
                  STUFF I CAN DREAM
               </strong>
             </p>
@@ -97,9 +125,23 @@ exports[`About matches the snapshot 1`] = `
               <strong
                 className="data-line-content"
               >
-                <i
-                  className="fa fa-bug"
-                />
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-bug fa-w-16 "
+                  data-icon="bug"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
                  WITH SOME BUGS
               </strong>
             </p>
@@ -117,9 +159,23 @@ exports[`About matches the snapshot 1`] = `
               <strong
                 className="data-line-content"
               >
-                <i
-                  className="fa fa-terminal"
-                />
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-terminal fa-w-20 "
+                  data-icon="terminal"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M257.981 272.971L63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
                  CURRENTLY LEARNING
               </strong>
             </p>
@@ -131,11 +187,11 @@ exports[`About matches the snapshot 1`] = `
         <div
           className="column personal-details"
         >
-          <h2
-            className="title"
+          <h1
+            className="title title"
           >
-            Some personal details.
-          </h2>
+            ome personal details.
+          </h1>
           <div
             className="columns is-mobile"
           >

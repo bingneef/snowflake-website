@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import jump from "jump.js";
 import React from "react";
 
 import { RippleButton } from "./components";
@@ -6,7 +7,10 @@ import styles from "./landing.module.scss";
 
 function Landing() {
   function navToPortfolio() {
-    // console.log("ok");
+    const $el = document.querySelector("#portfolio");
+    if ($el !== null) {
+      jump($el);
+    }
   }
 
   return (

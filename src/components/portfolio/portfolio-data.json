@@ -1,0 +1,191 @@
+{
+  "serious": [
+    {
+      "title": "MusicGenius",
+      "customer": "LUMC & private doctors",
+      "projectState": "Working prototype",
+      "description": "The exact details of this project are still kinda secret. So stay tuned!",
+      "techniques": [
+        "Angular",
+        "GULP",
+        "Angular Material",
+        "SASS",
+        "CoffeeScript",
+        "Rails"
+      ],
+      "callToAction": {
+        "type": "comingSoon"
+      },
+      "tag": "musicgenius"
+    },
+    {
+      "title": "Sportscoach",
+      "customer": "Personal project",
+      "projectState": "Finished and thinking about version 2.0",
+      "description": "Keep track of everything!",
+      "techniques": ["Android"],
+      "callToAction": {
+        "type": "playstore",
+        "link": "https://play.google.com/store/apps/details?id=hashtag.snowflake.sportscoach&hl=en"
+      },
+      "image": true,
+      "tag": "sportscoach"
+    },
+    {
+      "title": "Spot",
+      "customer": "Technical Assessment Sping BV",
+      "projectState": "Finished and (very) successfull",
+      "description": "Spot let\"s you spot animals all over the world for guides to provide better safari trips. Can you spot them all? NOTE: due to recent changes in the api, the spotting only works under https (which I do not have yet), but you can still see what it does. The login credentials are username: sping & password: sping.",
+      "techniques": ["PHP", "jQuery", "Material Design", "MySQL", "Android"],
+      "callToAction": {
+        "type": "url",
+        "link": "http://spot.snowflakewebdesign.nl"
+      },
+      "image": true,
+      "tag": "spot"
+    },
+    {
+      "title": "Uwdiernatuurlijkbeter.nl",
+      "customer": "Liesbeth Voorham",
+      "projectState": "Finished & wrapped-up",
+      "description": "Website for my mom. It features a one-page scrolling with a big hero-image. Many photos are used to pass the feeling that my mom is trying to get.",
+      "techniques": ["Wordpress"],
+      "callToAction": {
+        "type": "url",
+        "link": "http://www.uwdiernatuurlijkbeter.nl"
+      },
+      "image": true,
+      "tag": "uwdiernatuurlijkbeter"
+    },
+    {
+      "title": "Eyebizafilm.nl",
+      "customer": "Eyebizafilm Production",
+      "projectState": "Finished & wrapped-up",
+      "description": "Website for an Ibiza based film producers. The website contains a slick one-page design that fits the branding they want to bring forward. Wordpress with a customized theme is used for this project.",
+      "techniques": ["Wordpress"],
+      "callToAction": {
+        "type": "url",
+        "link": "http://www.eyebizafilm.com"
+      },
+      "image": true,
+      "tag": "eyebizafilm"
+    },
+    {
+      "title": "DofficeIbiza.nl",
+      "customer": "D\"Office Ibiza",
+      "projectState": "Finished & working on a redesign",
+      "description": "Website for an Ibiza based real-estate business. The website is designed to bring the vibe of Ibiza forward and be able to quickly see what house are available for sale/rent. Wordpress with a customized theme is used for this project. An extra nice feature is added in the news section that tells the current weather in Ibiza to warm the visitor to visit this beautiful island in Spain.",
+      "techniques": ["Wordpress", "Public APIs"],
+      "callToAction": {
+        "type": "url",
+        "link": "http://www.dofficeibiza.com"
+      },
+      "image": true,
+      "tag": "dofficeibiza"
+    },
+    {
+      "title": "DIESPO tutoring portal",
+      "customer": "DIESPO",
+      "projectState": "Finished & wrapped-up",
+      "description": "Webapplication and a website for a tutoring company based in Delft. The platform allows the tutors to pick up jobs themselves based on their location and specialities. Furthermore administration is build-in the application to make facturation and operational reports as easy task. Furthermore they are able to promote certain jobs that will send a notification to the tutors that are elible.",
+      "techniques": ["PHP", "MySQL", "Foundation", "Wordpress"],
+      "callToAction": {
+        "type": "url",
+        "link": "http://www.diespo.nl"
+      },
+      "image": true,
+      "tag": "diespo"
+    }
+  ],
+  "tools": [
+    {
+      "title": "NodeSocket",
+      "customer": "Personal project",
+      "projectState": "Ready for deployment",
+      "description": "Nodejs application that allows front-end applications to communicate with sockets. The goal is to have it open for anyone that want to quickly test sockets in their application.",
+      "techniques": ["Nodejs", "SocketIO", "Mysql (future)"],
+      "callToAction": {
+        "type": "github",
+        "link": "https://github.com/bingneef/node-socket"
+      },
+      "tag": "nodesocket"
+    },
+    {
+      "title": "Chrome Extension Detector",
+      "customer": "Personal project",
+      "projectState": "Available on Bower",
+      "description": "Library that allows the developer to detect whether the user has certain Chrome extensions installed. The list is currently small, but is designed for large expansion.",
+      "techniques": ["ChromeExtension", "Bower", "Coffee", "Sass"],
+      "callToAction": {
+        "type": "github",
+        "link": "https://github.com/bingneef/chrome-extension-detector"
+      },
+      "tag": "chrome-extension-detector"
+    }
+  ],
+  "fun": [
+    {
+      "title": "DuckHunt",
+      "customer": "Personal project",
+      "projectState": "Working prototype",
+      "description": "Remember the good-old days with Duckhunt? Well this App brings back the memories. It combines the Gyro from your mobile device and sockets to act as the gun. Make sure to go to this link with your mobile phone and your desktop browser. The game is currently still under development, so be prepared for bugs.",
+      "techniques": [
+        "Angular",
+        "Sockets",
+        "Coffee",
+        "Sass",
+        "Gulp",
+        "DeviceOrientation"
+      ],
+      "callToAction": {
+        "type": "url",
+        "link": "http://duckhunt.snowflakewebdesign.nl"
+      },
+      "tag": "duckhunt"
+    },
+    {
+      "title": "Letters&Numbers",
+      "customer": "Personal project",
+      "projectState": "Working prototype",
+      "description": "This is a riddle that involves letters and numbers spread out over two devices that communicate through sockets. ",
+      "techniques": [
+        "Angular",
+        "Sockets",
+        "Coffee",
+        "Sass",
+        "Gulp",
+        "Bootstrap"
+      ],
+      "callToAction": {
+        "type": "url",
+        "link": "http://letters-numbers.snowflakewebdesign.nl"
+      },
+      "tag": "letters&numbers"
+    },
+    {
+      "title": "CitySearch",
+      "customer": "Personal project",
+      "projectState": "Finished & wrapped-up",
+      "description": "A simple app that allows you to search photos from cities. It works by first comparing your search to known cities and then ask Flickr to retun a photo of that location. Nothing special, but it looks ok and is kinda fun.",
+      "techniques": ["Public APIs", "jQuery"],
+      "callToAction": {
+        "type": "url",
+        "link": "http://city-search.snowflakewebdesign.nl"
+      },
+      "tag": "city-search"
+    },
+    {
+      "title": "BikeLight",
+      "customer": "Personal project",
+      "projectState": "Finished & in the PlayStore",
+      "description": "An Android application for when you forgot your bikelight. The screen illuminates red (backlight) and the white/yellow flash replaces your front-light. This was my first Android App.",
+      "techniques": ["Android"],
+      "callToAction": {
+        "type": "playstore",
+        "link": "https://play.google.com/store/apps/details?id=com.hashtag.bikelight&hl=en"
+      },
+      "image": true,
+      "tag": "bikelight"
+    }
+  ]
+}

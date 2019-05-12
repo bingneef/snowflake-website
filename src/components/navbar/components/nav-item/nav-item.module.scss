@@ -3,10 +3,11 @@
   padding-right: 4px;
   color: #f7f7f7 !important;
   font-weight: 400;
-  &.isActive {
-    color: white !important;
-    font-weight: 700;
-  }
+}
+
+.isActive {
+  color: white !important;
+  font-weight: 700;
 }
 
 .inverse {

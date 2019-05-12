@@ -1,8 +1,13 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 import React from "react";
 
 import styles from "./ripple-button.module.scss";
+
+library.add(faArrowDown);
 
 function RippleButton({ onClick }: Props) {
   return (
@@ -15,7 +20,7 @@ function RippleButton({ onClick }: Props) {
         )}
         onClick={onClick}
       >
-        <i className="fa fa-lg fa-arrow-down" />
+        <FontAwesomeIcon icon="arrow-down" />
       </a>
       <div className={styles.ripple} />
       <div className={styles.rippleDelay} />

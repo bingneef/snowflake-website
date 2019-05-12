@@ -1,7 +1,18 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faBed,
+  faBug,
+  faMagic,
+  faTerminal
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useMemo } from "react";
 
+import { Title } from "../typography";
 import styles from "./about.module.scss";
 import { calculateCurrentAge } from "./utility";
+
+library.add(faMagic, faBed, faBug, faTerminal);
 
 function About() {
   const currentAge = useMemo(() => calculateCurrentAge(), []);
@@ -10,12 +21,12 @@ function About() {
     <section id="about" className="hero is-info is-fullheight">
       <div className="hero-body">
         <div className="container">
-          <h1 className="title is-1 has-text-centered">
+          <Title className="is-1 has-text-centered">
             Whats all this about?
-          </h1>
+          </Title>
           <div className="columns">
             <div className="column">
-              <h2 className="title">Who adds the fluffy?</h2>
+              <Title>Who adds the fluffy?</Title>
               <p>
                 Hello! I am an full-stack developer from Noordwijk, Netherlands.
               </p>
@@ -27,11 +38,11 @@ function About() {
               </p>
             </div>
             <div className="column">
-              <h2 className="title">Everyone needs skills!</h2>
+              <Title>Everyone needs skills!</Title>
               <div className={styles.dataLine}>
                 <p>
                   <strong className="data-line-content">
-                    <i className="fa fa-magic" /> CREATING MAGIC
+                    <FontAwesomeIcon icon="magic" /> CREATING MAGIC
                   </strong>
                 </p>
                 <p>React, React-native, NodeJS, Ruby on Rails, VueJS</p>
@@ -40,7 +51,7 @@ function About() {
               <div className={styles.dataLine}>
                 <p>
                   <strong className="data-line-content">
-                    <i className="fa fa-bed" /> STUFF I CAN DREAM
+                    <FontAwesomeIcon icon="bed" /> STUFF I CAN DREAM
                   </strong>
                 </p>
                 <p>GatsbyJS, (public) APIs, MySQL, MongoDB, Webpack, CSS</p>
@@ -49,7 +60,7 @@ function About() {
               <div className={styles.dataLine}>
                 <p>
                   <strong className="data-line-content">
-                    <i className="fa fa-bug" /> WITH SOME BUGS
+                    <FontAwesomeIcon icon="bug" /> WITH SOME BUGS
                   </strong>
                 </p>
                 <p>PHP, Android</p>
@@ -58,14 +69,14 @@ function About() {
               <div className={styles.dataLine}>
                 <p>
                   <strong className="data-line-content">
-                    <i className="fa fa-terminal" /> CURRENTLY LEARNING
+                    <FontAwesomeIcon icon="terminal" /> CURRENTLY LEARNING
                   </strong>
                 </p>
                 <p>NextJS</p>
               </div>
             </div>
             <div className="column personal-details">
-              <h2 className="title">Some personal details.</h2>
+              <Title>ome personal details.</Title>
               <div className="columns is-mobile">
                 <div className="column is-narrow data-line">
                   <p>

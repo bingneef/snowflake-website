@@ -1,0 +1,22 @@
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  background: none;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+main {
+  overflow-y: auto;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  scroll-behavior: smooth;
+}

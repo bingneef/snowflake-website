@@ -35,9 +35,23 @@ exports[`Home matches the snapshot 1`] = `
       <span
         className="icon"
       >
-        <i
-          className="fa fa-github"
-        />
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-github fa-w-16 "
+          data-icon="github"
+          data-prefix="fab"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 496 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
       </span>
     </a>
   </nav>
@@ -77,9 +91,23 @@ exports[`Home matches the snapshot 1`] = `
           className="button is-success button nextButton"
           onClick={[Function]}
         >
-          <i
-            className="fa fa-lg fa-arrow-down"
-          />
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-arrow-down fa-w-14 "
+            data-icon="arrow-down"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
         </a>
         <div
           className="ripple"
@@ -117,7 +145,233 @@ exports[`Home matches the snapshot 1`] = `
       </div>
       <div
         className="tabs"
-      />
+      >
+        <ul>
+          <li
+            className="is-active"
+            onClick={[Function]}
+          >
+            <a>
+              <span
+                className="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-rocket fa-w-16 "
+                  data-icon="rocket"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M505.05 19.1a15.89 15.89 0 0 0-12.2-12.2C460.65 0 435.46 0 410.36 0c-103.2 0-165.1 55.2-211.29 128H94.87A48 48 0 0 0 52 154.49l-49.42 98.8A24 24 0 0 0 24.07 288h103.77l-22.47 22.47a32 32 0 0 0 0 45.25l50.9 50.91a32 32 0 0 0 45.26 0L224 384.16V488a24 24 0 0 0 34.7 21.49l98.7-49.39a47.91 47.91 0 0 0 26.5-42.9V312.79c72.59-46.3 128-108.4 128-211.09.1-25.2.1-50.4-6.85-82.6zM384 168a40 40 0 1 1 40-40 40 40 0 0 1-40 40z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+              <span>
+                Serious
+              </span>
+            </a>
+          </li>
+          <li
+            className=""
+            onClick={[Function]}
+          >
+            <a>
+              <span
+                className="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-wrench fa-w-16 "
+                  data-icon="wrench"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M507.73 109.1c-2.24-9.03-13.54-12.09-20.12-5.51l-74.36 74.36-67.88-11.31-11.31-67.88 74.36-74.36c6.62-6.62 3.43-17.9-5.66-20.16-47.38-11.74-99.55.91-136.58 37.93-39.64 39.64-50.55 97.1-34.05 147.2L18.74 402.76c-24.99 24.99-24.99 65.51 0 90.5 24.99 24.99 65.51 24.99 90.5 0l213.21-213.21c50.12 16.71 107.47 5.68 147.37-34.22 37.07-37.07 49.7-89.32 37.91-136.73zM64 472c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+              <span>
+                Tools
+              </span>
+            </a>
+          </li>
+          <li
+            className=""
+            onClick={[Function]}
+          >
+            <a>
+              <span
+                className="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-heart fa-w-16 "
+                  data-icon="heart"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+              <span>
+                Fun
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="columns is-multiline"
+      >
+        <div
+          className="column is-3"
+          data-item-tag="musicgenius"
+          onClick={[Function]}
+        >
+          <div
+            className="portfolio-item-container"
+          >
+            <img
+              src="/static/assets/images/portfolio/empty.svg"
+            />
+            <h2
+              className="subtitle"
+            >
+              MusicGenius
+            </h2>
+          </div>
+        </div>
+        <div
+          className="column is-3"
+          data-item-tag="sportscoach"
+          onClick={[Function]}
+        >
+          <div
+            className="portfolio-item-container"
+          >
+            <img
+              src="/static/assets/images/portfolio/sportscoach-min.png"
+            />
+            <h2
+              className="subtitle"
+            >
+              Sportscoach
+            </h2>
+          </div>
+        </div>
+        <div
+          className="column is-3"
+          data-item-tag="spot"
+          onClick={[Function]}
+        >
+          <div
+            className="portfolio-item-container"
+          >
+            <img
+              src="/static/assets/images/portfolio/spot-min.png"
+            />
+            <h2
+              className="subtitle"
+            >
+              Spot
+            </h2>
+          </div>
+        </div>
+        <div
+          className="column is-3"
+          data-item-tag="uwdiernatuurlijkbeter"
+          onClick={[Function]}
+        >
+          <div
+            className="portfolio-item-container"
+          >
+            <img
+              src="/static/assets/images/portfolio/uwdiernatuurlijkbeter-min.png"
+            />
+            <h2
+              className="subtitle"
+            >
+              Uwdiernatuurlijkbeter.nl
+            </h2>
+          </div>
+        </div>
+        <div
+          className="column is-3"
+          data-item-tag="eyebizafilm"
+          onClick={[Function]}
+        >
+          <div
+            className="portfolio-item-container"
+          >
+            <img
+              src="/static/assets/images/portfolio/eyebizafilm-min.png"
+            />
+            <h2
+              className="subtitle"
+            >
+              Eyebizafilm.nl
+            </h2>
+          </div>
+        </div>
+        <div
+          className="column is-3"
+          data-item-tag="dofficeibiza"
+          onClick={[Function]}
+        >
+          <div
+            className="portfolio-item-container"
+          >
+            <img
+              src="/static/assets/images/portfolio/dofficeibiza-min.png"
+            />
+            <h2
+              className="subtitle"
+            >
+              DofficeIbiza.nl
+            </h2>
+          </div>
+        </div>
+        <div
+          className="column is-3"
+          data-item-tag="diespo"
+          onClick={[Function]}
+        >
+          <div
+            className="portfolio-item-container"
+          >
+            <img
+              src="/static/assets/images/portfolio/diespo-min.png"
+            />
+            <h2
+              className="subtitle"
+            >
+              DIESPO tutoring portal
+            </h2>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section
@@ -131,7 +385,7 @@ exports[`Home matches the snapshot 1`] = `
         className="container"
       >
         <h1
-          className="title is-1 has-text-centered"
+          className="title is-1 has-text-centered title"
         >
           Whats all this about?
         </h1>
@@ -141,11 +395,11 @@ exports[`Home matches the snapshot 1`] = `
           <div
             className="column"
           >
-            <h2
-              className="title"
+            <h1
+              className="title title"
             >
               Who adds the fluffy?
-            </h2>
+            </h1>
             <p>
               Hello! I am an full-stack developer from Noordwijk, Netherlands.
             </p>
@@ -164,11 +418,11 @@ exports[`Home matches the snapshot 1`] = `
           <div
             className="column"
           >
-            <h2
-              className="title"
+            <h1
+              className="title title"
             >
               Everyone needs skills!
-            </h2>
+            </h1>
             <div
               className="dataLine"
             >
@@ -176,9 +430,23 @@ exports[`Home matches the snapshot 1`] = `
                 <strong
                   className="data-line-content"
                 >
-                  <i
-                    className="fa fa-magic"
-                  />
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-magic fa-w-16 "
+                    data-icon="magic"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 96l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zM80 160l26.66-53.33L160 80l-53.34-26.67L80 0 53.34 53.33 0 80l53.34 26.67L80 160zm352 128l-26.66 53.33L352 368l53.34 26.67L432 448l26.66-53.33L512 368l-53.34-26.67L432 288zm70.62-193.77L417.77 9.38C411.53 3.12 403.34 0 395.15 0c-8.19 0-16.38 3.12-22.63 9.38L9.38 372.52c-12.5 12.5-12.5 32.76 0 45.25l84.85 84.85c6.25 6.25 14.44 9.37 22.62 9.37 8.19 0 16.38-3.12 22.63-9.37l363.14-363.15c12.5-12.48 12.5-32.75 0-45.24zM359.45 203.46l-50.91-50.91 86.6-86.6 50.91 50.91-86.6 86.6z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
                    CREATING MAGIC
                 </strong>
               </p>
@@ -196,9 +464,23 @@ exports[`Home matches the snapshot 1`] = `
                 <strong
                   className="data-line-content"
                 >
-                  <i
-                    className="fa fa-bed"
-                  />
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-bed fa-w-20 "
+                    data-icon="bed"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 640 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
                    STUFF I CAN DREAM
                 </strong>
               </p>
@@ -216,9 +498,23 @@ exports[`Home matches the snapshot 1`] = `
                 <strong
                   className="data-line-content"
                 >
-                  <i
-                    className="fa fa-bug"
-                  />
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-bug fa-w-16 "
+                    data-icon="bug"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
                    WITH SOME BUGS
                 </strong>
               </p>
@@ -236,9 +532,23 @@ exports[`Home matches the snapshot 1`] = `
                 <strong
                   className="data-line-content"
                 >
-                  <i
-                    className="fa fa-terminal"
-                  />
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-terminal fa-w-20 "
+                    data-icon="terminal"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 640 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M257.981 272.971L63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
                    CURRENTLY LEARNING
                 </strong>
               </p>
@@ -250,11 +560,11 @@ exports[`Home matches the snapshot 1`] = `
           <div
             className="column personal-details"
           >
-            <h2
-              className="title"
+            <h1
+              className="title title"
             >
-              Some personal details.
-            </h2>
+              ome personal details.
+            </h1>
             <div
               className="columns is-mobile"
             >

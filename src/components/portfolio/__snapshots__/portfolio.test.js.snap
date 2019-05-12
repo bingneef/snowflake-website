@@ -28,7 +28,233 @@ exports[`Portfolio matches the snapshot 1`] = `
     </div>
     <div
       className="tabs"
-    />
+    >
+      <ul>
+        <li
+          className="is-active"
+          onClick={[Function]}
+        >
+          <a>
+            <span
+              className="icon"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-rocket fa-w-16 "
+                data-icon="rocket"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M505.05 19.1a15.89 15.89 0 0 0-12.2-12.2C460.65 0 435.46 0 410.36 0c-103.2 0-165.1 55.2-211.29 128H94.87A48 48 0 0 0 52 154.49l-49.42 98.8A24 24 0 0 0 24.07 288h103.77l-22.47 22.47a32 32 0 0 0 0 45.25l50.9 50.91a32 32 0 0 0 45.26 0L224 384.16V488a24 24 0 0 0 34.7 21.49l98.7-49.39a47.91 47.91 0 0 0 26.5-42.9V312.79c72.59-46.3 128-108.4 128-211.09.1-25.2.1-50.4-6.85-82.6zM384 168a40 40 0 1 1 40-40 40 40 0 0 1-40 40z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+            <span>
+              Serious
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+          onClick={[Function]}
+        >
+          <a>
+            <span
+              className="icon"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-wrench fa-w-16 "
+                data-icon="wrench"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M507.73 109.1c-2.24-9.03-13.54-12.09-20.12-5.51l-74.36 74.36-67.88-11.31-11.31-67.88 74.36-74.36c6.62-6.62 3.43-17.9-5.66-20.16-47.38-11.74-99.55.91-136.58 37.93-39.64 39.64-50.55 97.1-34.05 147.2L18.74 402.76c-24.99 24.99-24.99 65.51 0 90.5 24.99 24.99 65.51 24.99 90.5 0l213.21-213.21c50.12 16.71 107.47 5.68 147.37-34.22 37.07-37.07 49.7-89.32 37.91-136.73zM64 472c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+            <span>
+              Tools
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+          onClick={[Function]}
+        >
+          <a>
+            <span
+              className="icon"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-heart fa-w-16 "
+                data-icon="heart"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+            <span>
+              Fun
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="columns is-multiline"
+    >
+      <div
+        className="column is-3"
+        data-item-tag="musicgenius"
+        onClick={[Function]}
+      >
+        <div
+          className="portfolio-item-container"
+        >
+          <img
+            src="/static/assets/images/portfolio/empty.svg"
+          />
+          <h2
+            className="subtitle"
+          >
+            MusicGenius
+          </h2>
+        </div>
+      </div>
+      <div
+        className="column is-3"
+        data-item-tag="sportscoach"
+        onClick={[Function]}
+      >
+        <div
+          className="portfolio-item-container"
+        >
+          <img
+            src="/static/assets/images/portfolio/sportscoach-min.png"
+          />
+          <h2
+            className="subtitle"
+          >
+            Sportscoach
+          </h2>
+        </div>
+      </div>
+      <div
+        className="column is-3"
+        data-item-tag="spot"
+        onClick={[Function]}
+      >
+        <div
+          className="portfolio-item-container"
+        >
+          <img
+            src="/static/assets/images/portfolio/spot-min.png"
+          />
+          <h2
+            className="subtitle"
+          >
+            Spot
+          </h2>
+        </div>
+      </div>
+      <div
+        className="column is-3"
+        data-item-tag="uwdiernatuurlijkbeter"
+        onClick={[Function]}
+      >
+        <div
+          className="portfolio-item-container"
+        >
+          <img
+            src="/static/assets/images/portfolio/uwdiernatuurlijkbeter-min.png"
+          />
+          <h2
+            className="subtitle"
+          >
+            Uwdiernatuurlijkbeter.nl
+          </h2>
+        </div>
+      </div>
+      <div
+        className="column is-3"
+        data-item-tag="eyebizafilm"
+        onClick={[Function]}
+      >
+        <div
+          className="portfolio-item-container"
+        >
+          <img
+            src="/static/assets/images/portfolio/eyebizafilm-min.png"
+          />
+          <h2
+            className="subtitle"
+          >
+            Eyebizafilm.nl
+          </h2>
+        </div>
+      </div>
+      <div
+        className="column is-3"
+        data-item-tag="dofficeibiza"
+        onClick={[Function]}
+      >
+        <div
+          className="portfolio-item-container"
+        >
+          <img
+            src="/static/assets/images/portfolio/dofficeibiza-min.png"
+          />
+          <h2
+            className="subtitle"
+          >
+            DofficeIbiza.nl
+          </h2>
+        </div>
+      </div>
+      <div
+        className="column is-3"
+        data-item-tag="diespo"
+        onClick={[Function]}
+      >
+        <div
+          className="portfolio-item-container"
+        >
+          <img
+            src="/static/assets/images/portfolio/diespo-min.png"
+          />
+          <h2
+            className="subtitle"
+          >
+            DIESPO tutoring portal
+          </h2>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 `;

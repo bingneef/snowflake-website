@@ -17,6 +17,7 @@
     "prettier:fix": "prettier --write 'src/**/*.{tsx,ts,js}' 'pages/**/*.{tsx,ts,js}'",
     "typecheck": "tsc",
     "check:all": "yarn prettier:check && yarn lint && yarn typecheck && yarn test",
+    "fix:all": "yarn prettier:fix && yarn lint:fix && yarn test -u",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
     "lint:fix": "yarn lint --fix"
   },
@@ -33,6 +34,12 @@
     }
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-brands-svg-icons": "^5.8.2",
+    "@fortawesome/free-regular-svg-icons": "^5.8.2",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@marvelapp/react-ab-test": "^2.2.0",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
