@@ -1,5 +1,9 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faGithub, faGooglePlay, faNpm } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faGooglePlay,
+  faNpm
+} from "@fortawesome/free-brands-svg-icons";
 import { faGlobe, faRocket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
