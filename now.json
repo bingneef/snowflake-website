@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "name": "nextjs",
+  "name": "snowflake-website",
   "builds": [{ "src": "package.json", "use": "@now/next" }]
 }

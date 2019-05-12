@@ -54,7 +54,10 @@ function About() {
                     <FontAwesomeIcon icon="bed" /> STUFF I CAN DREAM
                   </strong>
                 </p>
-                <p>GatsbyJS, (public) APIs, MySQL, MongoDB, Webpack, CSS</p>
+                <p>
+                  Typescript, Jest, GatsbyJS, MySQL, MongoDB, Parcel/Webpack,
+                  SCSS
+                </p>
               </div>
               <div className={styles.separator} />
               <div className={styles.dataLine}>

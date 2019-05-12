@@ -467,7 +467,7 @@ exports[`Home matches the snapshot 1`] = `
                 </strong>
               </p>
               <p>
-                GatsbyJS, (public) APIs, MySQL, MongoDB, Webpack, CSS
+                Typescript, Jest, GatsbyJS, MySQL, MongoDB, Parcel/Webpack, SCSS
               </p>
             </div>
             <div
