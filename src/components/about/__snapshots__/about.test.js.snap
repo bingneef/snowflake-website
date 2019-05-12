@@ -190,7 +190,7 @@ exports[`About matches the snapshot 1`] = `
           <h1
             className="title title"
           >
-            ome personal details.
+            Some personal details.
           </h1>
           <div
             className="columns is-mobile"
