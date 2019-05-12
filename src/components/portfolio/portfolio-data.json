@@ -1,6 +1,58 @@
 {
   "serious": [
     {
+      "title": "Snowflake Website",
+      "customer": "B&B Digital",
+      "projectState": "Released",
+      "description": "This website that is a portfolio for my work. I like to use this website to try-out new technologies and frameworks.",
+      "techniques": [
+        "React",
+        "NextJS",
+        "Typescript",
+        "Jest",
+        "Now",
+        "Storybook",
+        "Bulma"
+      ],
+      "callToAction": {
+        "type": "github",
+        "link": "https://github.com/bingneef/snowflake-website"
+      },
+      "image": true,
+      "tag": "snowflakewebsite"
+    },
+    {
+      "title": "TheWeddingApp",
+      "customer": "B&B Digital",
+      "projectState": "Working prototype",
+      "description": "The perfect wedding app for you, the to-be newly weds, and your guest. Keep them up-to-date about the programme, locations and let them submit their photos.",
+      "techniques": ["React-native", "Firebase"],
+      "callToAction": {
+        "type": "comingSoon"
+      },
+      "image": true,
+      "tag": "theweddingapp"
+    },
+    {
+      "title": "De Punaise",
+      "customer": "Ariston '80",
+      "projectState": "(no-longer) Working prototype",
+      "description": "Keep-up-to-date with all the news and non-news of Ariston '80",
+      "techniques": [
+        "React-native",
+        "GraphQL",
+        "NodeJS",
+        "MongoDB",
+        "Facebook API"
+      ],
+      "callToAction": {
+        "type": "github",
+        "link": "https://github.com/bingneef/de-punaise"
+      },
+      "image": true,
+      "tag": "depunaise"
+    },
+    {
       "title": "MusicGenius",
       "customer": "LUMC & private doctors",
       "projectState": "Working prototype",
@@ -43,61 +95,21 @@
       },
       "image": true,
       "tag": "spot"
-    },
-    {
-      "title": "Uwdiernatuurlijkbeter.nl",
-      "customer": "Liesbeth Voorham",
-      "projectState": "Finished & wrapped-up",
-      "description": "Website for my mom. It features a one-page scrolling with a big hero-image. Many photos are used to pass the feeling that my mom is trying to get.",
-      "techniques": ["Wordpress"],
-      "callToAction": {
-        "type": "url",
-        "link": "http://www.uwdiernatuurlijkbeter.nl"
-      },
-      "image": true,
-      "tag": "uwdiernatuurlijkbeter"
-    },
-    {
-      "title": "Eyebizafilm.nl",
-      "customer": "Eyebizafilm Production",
-      "projectState": "Finished & wrapped-up",
-      "description": "Website for an Ibiza based film producers. The website contains a slick one-page design that fits the branding they want to bring forward. Wordpress with a customized theme is used for this project.",
-      "techniques": ["Wordpress"],
-      "callToAction": {
-        "type": "url",
-        "link": "http://www.eyebizafilm.com"
-      },
-      "image": true,
-      "tag": "eyebizafilm"
-    },
-    {
-      "title": "DofficeIbiza.nl",
-      "customer": "D\"Office Ibiza",
-      "projectState": "Finished & working on a redesign",
-      "description": "Website for an Ibiza based real-estate business. The website is designed to bring the vibe of Ibiza forward and be able to quickly see what house are available for sale/rent. Wordpress with a customized theme is used for this project. An extra nice feature is added in the news section that tells the current weather in Ibiza to warm the visitor to visit this beautiful island in Spain.",
-      "techniques": ["Wordpress", "Public APIs"],
-      "callToAction": {
-        "type": "url",
-        "link": "http://www.dofficeibiza.com"
-      },
-      "image": true,
-      "tag": "dofficeibiza"
-    },
-    {
-      "title": "DIESPO tutoring portal",
-      "customer": "DIESPO",
-      "projectState": "Finished & wrapped-up",
-      "description": "Webapplication and a website for a tutoring company based in Delft. The platform allows the tutors to pick up jobs themselves based on their location and specialities. Furthermore administration is build-in the application to make facturation and operational reports as easy task. Furthermore they are able to promote certain jobs that will send a notification to the tutors that are elible.",
-      "techniques": ["PHP", "MySQL", "Foundation", "Wordpress"],
-      "callToAction": {
-        "type": "url",
-        "link": "http://www.diespo.nl"
-      },
-      "image": true,
-      "tag": "diespo"
     }
   ],
   "tools": [
+    {
+      "title": "MapArrayResponse",
+      "customer": "Personal project",
+      "projectState": "Available on NPM",
+      "description": "Little helper to map an array with values from another array. Useful when mapping GraphQL responses from Dataloaders.",
+      "techniques": ["Javascript", "Jest", "TravisCI"],
+      "callToAction": {
+        "type": "npm",
+        "link": "https://www.npmjs.com/package/map-array-response"
+      },
+      "tag": "maparrayresponse"
+    },
     {
       "title": "NodeSocket",
       "customer": "Personal project",
@@ -125,54 +137,16 @@
   ],
   "fun": [
     {
-      "title": "DuckHunt",
+      "title": "Google Home Hangman",
       "customer": "Personal project",
-      "projectState": "Working prototype",
-      "description": "Remember the good-old days with Duckhunt? Well this App brings back the memories. It combines the Gyro from your mobile device and sockets to act as the gun. Make sure to go to this link with your mobile phone and your desktop browser. The game is currently still under development, so be prepared for bugs.",
-      "techniques": [
-        "Angular",
-        "Sockets",
-        "Coffee",
-        "Sass",
-        "Gulp",
-        "DeviceOrientation"
-      ],
+      "projectState": "Working in Dev",
+      "description": "Play hangman with your own Google Home.",
+      "techniques": ["Google Home", "DialogFlow"],
       "callToAction": {
-        "type": "url",
-        "link": "http://duckhunt.snowflakewebdesign.nl"
+        "type": "github",
+        "link": "https://github.com/bingneef/GoogleHomeHangman"
       },
-      "tag": "duckhunt"
-    },
-    {
-      "title": "Letters&Numbers",
-      "customer": "Personal project",
-      "projectState": "Working prototype",
-      "description": "This is a riddle that involves letters and numbers spread out over two devices that communicate through sockets. ",
-      "techniques": [
-        "Angular",
-        "Sockets",
-        "Coffee",
-        "Sass",
-        "Gulp",
-        "Bootstrap"
-      ],
-      "callToAction": {
-        "type": "url",
-        "link": "http://letters-numbers.snowflakewebdesign.nl"
-      },
-      "tag": "letters&numbers"
-    },
-    {
-      "title": "CitySearch",
-      "customer": "Personal project",
-      "projectState": "Finished & wrapped-up",
-      "description": "A simple app that allows you to search photos from cities. It works by first comparing your search to known cities and then ask Flickr to retun a photo of that location. Nothing special, but it looks ok and is kinda fun.",
-      "techniques": ["Public APIs", "jQuery"],
-      "callToAction": {
-        "type": "url",
-        "link": "http://city-search.snowflakewebdesign.nl"
-      },
-      "tag": "city-search"
+      "tag": "googlehomehangman"
     },
     {
       "title": "BikeLight",

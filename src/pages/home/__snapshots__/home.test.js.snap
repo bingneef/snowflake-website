@@ -247,6 +247,60 @@ exports[`Home matches the snapshot 1`] = `
       >
         <div
           className="column is-3"
+          data-item-tag="snowflakewebsite"
+          onClick={[Function]}
+        >
+          <div
+            className="portfolio-item-container"
+          >
+            <img
+              src="/static/assets/images/portfolio/snowflakewebsite-min.png"
+            />
+            <h2
+              className="subtitle"
+            >
+              Snowflake Website
+            </h2>
+          </div>
+        </div>
+        <div
+          className="column is-3"
+          data-item-tag="theweddingapp"
+          onClick={[Function]}
+        >
+          <div
+            className="portfolio-item-container"
+          >
+            <img
+              src="/static/assets/images/portfolio/theweddingapp-min.png"
+            />
+            <h2
+              className="subtitle"
+            >
+              TheWeddingApp
+            </h2>
+          </div>
+        </div>
+        <div
+          className="column is-3"
+          data-item-tag="depunaise"
+          onClick={[Function]}
+        >
+          <div
+            className="portfolio-item-container"
+          >
+            <img
+              src="/static/assets/images/portfolio/depunaise-min.png"
+            />
+            <h2
+              className="subtitle"
+            >
+              De Punaise
+            </h2>
+          </div>
+        </div>
+        <div
+          className="column is-3"
           data-item-tag="musicgenius"
           onClick={[Function]}
         >
@@ -296,78 +350,6 @@ exports[`Home matches the snapshot 1`] = `
               className="subtitle"
             >
               Spot
-            </h2>
-          </div>
-        </div>
-        <div
-          className="column is-3"
-          data-item-tag="uwdiernatuurlijkbeter"
-          onClick={[Function]}
-        >
-          <div
-            className="portfolio-item-container"
-          >
-            <img
-              src="/static/assets/images/portfolio/uwdiernatuurlijkbeter-min.png"
-            />
-            <h2
-              className="subtitle"
-            >
-              Uwdiernatuurlijkbeter.nl
-            </h2>
-          </div>
-        </div>
-        <div
-          className="column is-3"
-          data-item-tag="eyebizafilm"
-          onClick={[Function]}
-        >
-          <div
-            className="portfolio-item-container"
-          >
-            <img
-              src="/static/assets/images/portfolio/eyebizafilm-min.png"
-            />
-            <h2
-              className="subtitle"
-            >
-              Eyebizafilm.nl
-            </h2>
-          </div>
-        </div>
-        <div
-          className="column is-3"
-          data-item-tag="dofficeibiza"
-          onClick={[Function]}
-        >
-          <div
-            className="portfolio-item-container"
-          >
-            <img
-              src="/static/assets/images/portfolio/dofficeibiza-min.png"
-            />
-            <h2
-              className="subtitle"
-            >
-              DofficeIbiza.nl
-            </h2>
-          </div>
-        </div>
-        <div
-          className="column is-3"
-          data-item-tag="diespo"
-          onClick={[Function]}
-        >
-          <div
-            className="portfolio-item-container"
-          >
-            <img
-              src="/static/assets/images/portfolio/diespo-min.png"
-            />
-            <h2
-              className="subtitle"
-            >
-              DIESPO tutoring portal
             </h2>
           </div>
         </div>

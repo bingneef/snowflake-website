@@ -1,5 +1,5 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faGithub, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faGooglePlay, faNpm } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe, faRocket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
@@ -8,7 +8,7 @@ import React, { useEffect } from "react";
 import { ItemProps } from "../../../../../types/models";
 import styles from "./modal.module.scss";
 
-library.add(faGithub, faGooglePlay, faGlobe, faRocket);
+library.add(faGithub, faGooglePlay, faNpm, faGlobe, faRocket);
 
 function Modal({ item, closeModal }: Props) {
   function handleKeyEvent(event: KeyboardEvent) {
@@ -82,6 +82,19 @@ function Modal({ item, closeModal }: Props) {
                   <FontAwesomeIcon icon={["fab", "github"]} />
                 </span>
                 <span>View on Github</span>
+              </a>
+            )}
+
+            {item.callToAction && item.callToAction.type === "npm" && (
+              <a
+                className="button is-medium is-info"
+                href={item.callToAction && item.callToAction.link}
+                target="_blank"
+              >
+                <span className="icon">
+                  <FontAwesomeIcon icon={["fab", "npm"]} />
+                </span>
+                <span>View on NPM</span>
               </a>
             )}
 
