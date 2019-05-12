@@ -79,7 +79,7 @@ function About() {
               </div>
             </div>
             <div className="column personal-details">
-              <Title>ome personal details.</Title>
+              <Title>Some personal details.</Title>
               <div className="columns is-mobile">
                 <div className="column is-narrow data-line">
                   <p>
