@@ -1,3 +1,13 @@
+export function sendEvent(eventName: string, eventProperties?: {}) {
+  if (typeof FS === "undefined") {
+    // tslint:disable-next-line:no-console
+    console.log(
+      `Not sending event: ${eventName}, not in production environment`
+    );
+  } else {
+    FS.event(eventName, eventProperties);
+  }
+}
 function FullStory() {
   if (process.env.NODE_ENV !== "production") {
     return null;

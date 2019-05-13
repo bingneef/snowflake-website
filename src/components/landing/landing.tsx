@@ -2,11 +2,14 @@ import classNames from "classnames";
 import jump from "jump.js";
 import React from "react";
 
+import { sendEvent } from "../analytics/full-story";
 import { RippleButton } from "./components";
 import styles from "./landing.module.scss";
 
 function Landing() {
   function navToPortfolio() {
+    sendEvent("Landing CTA");
+
     const $el = document.querySelector("#portfolio");
     if ($el !== null) {
       jump($el);
