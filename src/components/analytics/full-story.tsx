@@ -8,6 +8,7 @@ export function sendEvent(eventName: string, eventProperties?: {}) {
     FS.event(eventName, eventProperties);
   }
 }
+
 function FullStory() {
   if (process.env.NODE_ENV !== "production") {
     return null;

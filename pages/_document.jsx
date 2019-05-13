@@ -4,9 +4,11 @@ import { Provider as StyletronProvider } from "styletron-react";
 import {
   Hotjar,
   GoogleAnalytics,
-  FullStory
+  FullStory,
+  Mixpanel
 } from "../src/components/analytics";
 import { styletron } from "../src/services/styletron";
+import { Mixpanel } from "../src/components/analytics/index";
 
 class MyDocument extends Document {
   static getInitialProps(props) {
@@ -38,6 +40,7 @@ class MyDocument extends Document {
             />
           ))}
           <FullStory />
+          <Mixpanel />
         </Head>
         <body>
           <Main />
