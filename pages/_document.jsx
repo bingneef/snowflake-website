@@ -8,7 +8,6 @@ import {
   Mixpanel
 } from "../src/components/analytics";
 import { styletron } from "../src/services/styletron";
-import { Mixpanel } from "../src/components/analytics/index";
 
 class MyDocument extends Document {
   static getInitialProps(props) {
