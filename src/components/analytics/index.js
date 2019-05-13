@@ -2,7 +2,7 @@
 import FullStory from "./full-story";
 import GoogleAnalytics from "./google-analytics";
 import Hotjar from "./hotjar";
-import Mixpanel from "./hotjar";
+import Mixpanel from "./mixpanel";
 
 export {
   /* PLOP_INJECT_EXPORT */
