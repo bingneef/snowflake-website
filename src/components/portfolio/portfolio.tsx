@@ -3,6 +3,8 @@ import { faHeart, faRocket, faWrench } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import React, { useState } from "react";
+import { sendEvent as sendFullStoryEvent } from "../analytics/full-story";
+import { sendEvent as sendMixpanelEvent } from "../analytics/mixpanel";
 
 import { ItemObjectProps, ItemProps } from "../../../types/models";
 import { Modal } from "./components";
@@ -14,23 +16,27 @@ const portfolioItems: ItemObjectProps = _portfolioItems;
 library.add(faWrench, faHeart, faRocket);
 
 function Portfolio() {
-  const [activeTab, setActiveTab] = useState<"serious" | "tools" | "fun">(
-    "serious"
-  );
+  const [activeTab, setActiveTab] = useState<TabOptions>("serious");
   const [modalItem, setModalItem] = useState<ItemProps | null>(null);
 
   const activeItems: ItemProps[] = portfolioItems[activeTab] || [];
 
+  function openTab(tab: TabOptions) {
+    sendFullStoryEvent("Portfolio OpenTab", { tab });
+    sendMixpanelEvent("Portfolio OpenTab", { tab });
+    setActiveTab(tab);
+  }
+
   function setSeriousTab() {
-    setActiveTab("serious");
+    openTab("serious");
   }
 
   function setToolsTab() {
-    setActiveTab("tools");
+    openTab("tools");
   }
 
   function setFunTab() {
-    setActiveTab("fun");
+    openTab("fun");
   }
 
   function closeModal() {
@@ -50,6 +56,11 @@ function Portfolio() {
       activeItems.find(
         (val: ItemProps) => val.tag === event.currentTarget.dataset.itemTag
       ) || null;
+
+    if (item) {
+      sendFullStoryEvent("Portfolio OpenItem", { tag: item.tag });
+      sendMixpanelEvent("Portfolio OpenItem", { tag: item.tag });
+    }
 
     setModalItem(item);
   }
@@ -144,5 +155,7 @@ function Portfolio() {
 }
 
 Portfolio.propTypes = {};
+
+type TabOptions = "serious" | "tools" | "fun";
 
 export default Portfolio;

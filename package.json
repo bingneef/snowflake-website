@@ -17,7 +17,7 @@
     "prettier:fix": "prettier --write 'src/**/*.{tsx,ts,js}' 'pages/**/*.{tsx,ts,js}'",
     "typecheck": "tsc",
     "check:all": "yarn prettier:check && yarn lint && yarn typecheck && yarn test",
-    "fix:all": "yarn prettier:fix && yarn lint:fix && yarn test -u",
+    "fix:all": "yarn tcm src && yarn prettier:fix && yarn lint:fix && yarn test -u",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
     "lint:fix": "yarn lint --fix"
   },
@@ -81,6 +81,7 @@
     "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^4.0.0",
+    "typed-css-modules": "^0.4.2",
     "typescript": "^3.4.5"
   }
 }

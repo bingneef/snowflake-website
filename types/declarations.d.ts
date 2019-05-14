@@ -3,7 +3,7 @@ interface FSInterface {
 }
 
 interface MixpanelInterface {
-  track: (eventName: string) => null;
+  track: (eventName: string, eventProperties?: {}) => null;
 }
 
 declare module "baseui/button";
