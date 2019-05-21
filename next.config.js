@@ -6,8 +6,8 @@ const payload = {
   cssModules: true
 };
 
-if (process.env.NOW) {
-  payload.target = "serverless";
+if (process.env.__NEXT_BUILDER_EXPERIMENTAL_TARGET) {
+  payload.target = process.env.__NEXT_BUILDER_EXPERIMENTAL_TARGET;
 }
 
 console.log({ payload, env: process.env });
