@@ -31,7 +31,7 @@ function Landing() {
         </div>
       </div>
       <div className="hero-foot has-text-centered">
-        <RippleButton onClick={navToPortfolio} />
+        <RippleButton test-id="cta" onClick={navToPortfolio} />
       </div>
     </section>
   );

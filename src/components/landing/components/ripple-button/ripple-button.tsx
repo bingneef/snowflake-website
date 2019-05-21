@@ -9,9 +9,9 @@ import styles from "./ripple-button.module.scss";
 
 library.add(faArrowDown);
 
-function RippleButton({ onClick }: Props) {
+function RippleButton({ onClick, ...props }: Props) {
   return (
-    <div className={styles.ripplePlaceholder}>
+    <div className={styles.ripplePlaceholder} {...props}>
       <a
         className={classNames(
           "button is-success",

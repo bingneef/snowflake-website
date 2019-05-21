@@ -12,6 +12,7 @@ exports[`Home matches the snapshot 1`] = `
     <a
       className="navItem isActive"
       onClick={[Function]}
+      test-id="button"
     >
       Home
     </a>
@@ -86,6 +87,7 @@ exports[`Home matches the snapshot 1`] = `
     >
       <div
         className="ripplePlaceholder"
+        test-id="cta"
       >
         <a
           className="button is-success button nextButton"

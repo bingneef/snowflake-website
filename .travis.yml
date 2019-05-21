@@ -18,6 +18,7 @@ jobs:
     - script: yarn typecheck
     - script: yarn prettier:check
     - script: yarn lint
+    - script: yarn e2e
     - stage: build
       script: yarn build
     - stage: build docker

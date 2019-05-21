@@ -1,8 +1,14 @@
+jest.mock("jump.js");
+
 import React from "react";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
 
 import Landing from "./landing";
+
+import jump from "jump.js";
+import * as fullStory from "../analytics/full-story";
+import * as mixpanel from "../analytics/mixpanel";
 
 describe("Landing", () => {
   it("renders without error", () => {
@@ -12,8 +18,27 @@ describe("Landing", () => {
   });
 
   it("matches the snapshot", () => {
-    const component = renderer.create(<Landing title="Landing" />);
+    const component = renderer.create(<Landing />);
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
+  });
+});
+
+describe("#navToPortfolio", () => {
+  let component;
+  beforeEach(() => {
+    component = renderer.create(<Landing />);
+  });
+
+  it("calls sendEvents with Landing CTA", () => {
+    fullStory.sendEvent = jest.fn();
+    mixpanel.sendEvent = jest.fn();
+
+    const rootInstance = component.root;
+    const $cta = rootInstance.findByProps({ "test-id": "cta" });
+    $cta.props.onClick();
+
+    expect(fullStory.sendEvent).toHaveBeenCalledWith("Landing CTA");
+    expect(mixpanel.sendEvent).toHaveBeenCalledWith("Landing CTA");
   });
 });

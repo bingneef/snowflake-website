@@ -12,7 +12,7 @@ describe("Navbar", () => {
   });
 
   it("matches the snapshot", () => {
-    const component = renderer.create(<Navbar title="Navbar" />);
+    const component = renderer.create(<Navbar />);
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
