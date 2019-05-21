@@ -10,4 +10,6 @@ if (process.env.NOW) {
   payload.target = "serverless";
 }
 
+console.log({ payload, env: process.env });
+
 module.exports = withTypescript(withSass(withCSS(payload)));
