@@ -1,3 +1,5 @@
+/*global cy*/
+
 const BASE_URL = "http://localhost:8010";
 
 describe("Portfolio", function() {
