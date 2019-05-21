@@ -91,6 +91,7 @@ function Navbar() {
     >
       <NavItem
         label="Home"
+        test-id="button"
         onClick={gotoLanding}
         inverse={inverse}
         active={activeNavItem === "landing"}

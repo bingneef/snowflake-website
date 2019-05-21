@@ -8,3 +8,6 @@ yarn-error.log
 .next
 node_modules
 coverage
+
+# Cypress
+cypress/videos
