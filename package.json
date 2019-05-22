@@ -10,7 +10,7 @@
     "generate": "plop --plopfile generator/plopfile.js",
     "now-build": "next build",
     "storybook": "start-storybook -p 6006 -c .storybook",
-    "e2e": "start-server-and-test 'yarn dev -p 8010'  http://localhost:8010 'cypress run'",
+    "e2e": "start-server-and-test 'yarn dev -p 8010'  http://localhost:8010 'cypress run --record --parallel'",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coveralls": "yarn test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
