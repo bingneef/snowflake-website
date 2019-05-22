@@ -17,7 +17,8 @@
     "prettier:check": "prettier --check 'src/**/*.{tsx,ts,js}' 'pages/**/*.{tsx,ts,js}'",
     "prettier:fix": "prettier --write 'src/**/*.{tsx,ts,js}' 'pages/**/*.{tsx,ts,js}'",
     "typecheck": "tsc",
-    "check:all": "yarn prettier:check && yarn lint && yarn typecheck && yarn test",
+    "check:formatting": "yarn prettier:check && yarn lint && yarn typecheck",
+    "check:all": "yarn prettier:check && yarn lint && yarn typecheck && yarn test && yarn e2e",
     "fix:all": "yarn tcm src && yarn prettier:fix && yarn lint:fix && yarn test -u",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
     "lint:fix": "yarn lint --fix"
