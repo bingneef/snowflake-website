@@ -8,7 +8,7 @@ import { Modal, Tabs } from "./components";
 import styles from "./portfolio.module.scss";
 
 import _portfolioItems from "./portfolio-data.json";
-const portfolioItems: ItemObjectProps = _portfolioItems;
+const portfolioItems = _portfolioItems as ItemObjectProps;
 
 function Portfolio({ initialTab = "serious" }: Props) {
   const [activeTab, setActiveTab] = useState<TabOptions>(initialTab);

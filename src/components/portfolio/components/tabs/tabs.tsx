@@ -1,9 +1,9 @@
-import { faHeart, faRocket, faWrench } from "@fortawesome/free-solid-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import { faHeart, faRocket, faWrench } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-import TabItem from "../tab-item";
 import { TabOptions } from "../../portfolio";
+import TabItem from "../tab-item";
 
 const items: Item[] = [
   {

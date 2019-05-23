@@ -65,4 +65,10 @@ describe("Portfolio", () => {
       expect(item.getAttribute("class").includes("is-active"));
     }
   });
+
+  it("does not crash when the tab has is not in the json", () => {
+    const div = document.createElement("div");
+    ReactDOM.render(<Portfolio initialTab={"bogus"} />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
 });

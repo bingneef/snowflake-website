@@ -1,6 +1,6 @@
+import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 import classNames from "classnames";
 import React from "react";
 

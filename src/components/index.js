@@ -1,4 +1,5 @@
 /* PLOP_INJECT_IMPORT */
+import CallToAction from "./call-to-action";
 import TabItem from "./tab-item";
 import Tabs from "./tabs";
 import Typography from "./typography";
@@ -10,8 +11,9 @@ import Landing from "./landing";
 
 export {
   /* PLOP_INJECT_EXPORT */
-	TabItem,
-	Tabs,
+  CallToAction,
+  TabItem,
+  Tabs,
   Typography,
   Portfolio,
   Navbar,
