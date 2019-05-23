@@ -2,7 +2,7 @@
   "serious": [
     {
       "title": "Snowflake Website",
-      "customer": "B&B Digital",
+      "customer": "Me",
       "projectState": "Released",
       "description": "This website that is a portfolio for my work. I like to use this website to try-out new technologies and frameworks.",
       "techniques": [
@@ -10,6 +10,7 @@
         "NextJS",
         "Typescript",
         "Jest",
+        "Cypress",
         "Now",
         "Storybook",
         "Bulma"

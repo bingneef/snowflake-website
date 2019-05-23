@@ -45,7 +45,9 @@ function About() {
                     <FontAwesomeIcon icon="magic" /> CREATING MAGIC
                   </strong>
                 </p>
-                <p>React, React-native, NodeJS, Ruby on Rails, VueJS</p>
+                <p>
+                  React, React-native, NodeJS, Ruby on Rails, VueJS, GraphQL
+                </p>
               </div>
               <div className={styles.separator} />
               <div className={styles.dataLine}>
@@ -56,7 +58,7 @@ function About() {
                 </p>
                 <p>
                   Typescript, Jest, GatsbyJS, MySQL, MongoDB, Parcel/Webpack,
-                  SCSS
+                  SCSS, Storybook, ElasticSearch
                 </p>
               </div>
               <div className={styles.separator} />
@@ -75,7 +77,7 @@ function About() {
                     <FontAwesomeIcon icon="terminal" /> CURRENTLY LEARNING
                   </strong>
                 </p>
-                <p>NextJS</p>
+                <p>NextJS, Cypress</p>
               </div>
             </div>
             <div className="column personal-details">

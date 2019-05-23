@@ -435,7 +435,7 @@ exports[`Home matches the snapshot 1`] = `
                 </strong>
               </p>
               <p>
-                React, React-native, NodeJS, Ruby on Rails, VueJS
+                React, React-native, NodeJS, Ruby on Rails, VueJS, GraphQL
               </p>
             </div>
             <div
@@ -469,7 +469,7 @@ exports[`Home matches the snapshot 1`] = `
                 </strong>
               </p>
               <p>
-                Typescript, Jest, GatsbyJS, MySQL, MongoDB, Parcel/Webpack, SCSS
+                Typescript, Jest, GatsbyJS, MySQL, MongoDB, Parcel/Webpack, SCSS, Storybook, ElasticSearch
               </p>
             </div>
             <div
@@ -537,7 +537,7 @@ exports[`Home matches the snapshot 1`] = `
                 </strong>
               </p>
               <p>
-                NextJS
+                NextJS, Cypress
               </p>
             </div>
           </div>
