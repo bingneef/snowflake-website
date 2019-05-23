@@ -253,7 +253,7 @@ exports[`Home matches the snapshot 1`] = `
         <div
           className="column is-3"
           data-item-tag="snowflakewebsite"
-          data-testid="portfolio-item"
+          data-testid="portfolio-item-0"
           onClick={[Function]}
         >
           <div
@@ -272,7 +272,7 @@ exports[`Home matches the snapshot 1`] = `
         <div
           className="column is-3"
           data-item-tag="theweddingapp"
-          data-testid="portfolio-item"
+          data-testid="portfolio-item-1"
           onClick={[Function]}
         >
           <div
@@ -291,7 +291,7 @@ exports[`Home matches the snapshot 1`] = `
         <div
           className="column is-3"
           data-item-tag="depunaise"
-          data-testid="portfolio-item"
+          data-testid="portfolio-item-2"
           onClick={[Function]}
         >
           <div
@@ -310,7 +310,7 @@ exports[`Home matches the snapshot 1`] = `
         <div
           className="column is-3"
           data-item-tag="musicgenius"
-          data-testid="portfolio-item"
+          data-testid="portfolio-item-3"
           onClick={[Function]}
         >
           <div
@@ -329,7 +329,7 @@ exports[`Home matches the snapshot 1`] = `
         <div
           className="column is-3"
           data-item-tag="sportscoach"
-          data-testid="portfolio-item"
+          data-testid="portfolio-item-4"
           onClick={[Function]}
         >
           <div
@@ -348,7 +348,7 @@ exports[`Home matches the snapshot 1`] = `
         <div
           className="column is-3"
           data-item-tag="spot"
-          data-testid="portfolio-item"
+          data-testid="portfolio-item-5"
           onClick={[Function]}
         >
           <div

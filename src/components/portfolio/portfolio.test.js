@@ -20,17 +20,16 @@ describe("Portfolio", () => {
   });
 
   it("matches the snapshot", () => {
-    const component = renderer.create(<Portfolio />);
-    let tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<Portfolio />);
+    expect(container).toMatchSnapshot();
   });
 
   it("sends analytics event on item click", () => {
-    const { getAllByTestId } = render(<Portfolio />);
+    const { getByTestId } = render(<Portfolio />);
     mixpanel.sendEvent = jest.fn();
     fullStory.sendEvent = jest.fn();
 
-    const item = getAllByTestId("portfolio-item")[0];
+    const item = getByTestId("portfolio-item-1");
     fireEvent.click(item);
 
     const payload = [
