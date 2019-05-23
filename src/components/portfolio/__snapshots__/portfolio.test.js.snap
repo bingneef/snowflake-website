@@ -32,6 +32,7 @@ exports[`Portfolio matches the snapshot 1`] = `
       <ul>
         <li
           className="is-active"
+          data-testid="tab-serious"
           onClick={[Function]}
         >
           <a>
@@ -63,6 +64,7 @@ exports[`Portfolio matches the snapshot 1`] = `
         </li>
         <li
           className=""
+          data-testid="tab-tools"
           onClick={[Function]}
         >
           <a>
@@ -94,6 +96,7 @@ exports[`Portfolio matches the snapshot 1`] = `
         </li>
         <li
           className=""
+          data-testid="tab-fun"
           onClick={[Function]}
         >
           <a>
@@ -131,6 +134,7 @@ exports[`Portfolio matches the snapshot 1`] = `
       <div
         className="column is-3"
         data-item-tag="snowflakewebsite"
+        data-testid="portfolio-item"
         onClick={[Function]}
       >
         <div
@@ -149,6 +153,7 @@ exports[`Portfolio matches the snapshot 1`] = `
       <div
         className="column is-3"
         data-item-tag="theweddingapp"
+        data-testid="portfolio-item"
         onClick={[Function]}
       >
         <div
@@ -167,6 +172,7 @@ exports[`Portfolio matches the snapshot 1`] = `
       <div
         className="column is-3"
         data-item-tag="depunaise"
+        data-testid="portfolio-item"
         onClick={[Function]}
       >
         <div
@@ -185,6 +191,7 @@ exports[`Portfolio matches the snapshot 1`] = `
       <div
         className="column is-3"
         data-item-tag="musicgenius"
+        data-testid="portfolio-item"
         onClick={[Function]}
       >
         <div
@@ -203,6 +210,7 @@ exports[`Portfolio matches the snapshot 1`] = `
       <div
         className="column is-3"
         data-item-tag="sportscoach"
+        data-testid="portfolio-item"
         onClick={[Function]}
       >
         <div
@@ -221,6 +229,7 @@ exports[`Portfolio matches the snapshot 1`] = `
       <div
         className="column is-3"
         data-item-tag="spot"
+        data-testid="portfolio-item"
         onClick={[Function]}
       >
         <div

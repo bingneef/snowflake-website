@@ -83,6 +83,7 @@ function Portfolio() {
               className={classNames({
                 "is-active": activeTab === "serious"
               })}
+              data-testid="tab-serious"
               onClick={setSeriousTab}
             >
               <a>
@@ -96,6 +97,7 @@ function Portfolio() {
               className={classNames({
                 "is-active": activeTab === "tools"
               })}
+              data-testid="tab-tools"
               onClick={setToolsTab}
             >
               <a>
@@ -109,6 +111,7 @@ function Portfolio() {
               className={classNames({
                 "is-active": activeTab === "fun"
               })}
+              data-testid="tab-fun"
               onClick={setFunTab}
             >
               <a>
@@ -128,6 +131,7 @@ function Portfolio() {
                 key={index.toString()}
                 className="column is-3"
                 data-item-tag={item.tag}
+                data-testid="portfolio-item"
                 onClick={setModalItemFromEvent}
               >
                 <div className="portfolio-item-container">
