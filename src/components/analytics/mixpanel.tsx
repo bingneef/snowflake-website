@@ -1,10 +1,12 @@
 export function sendEvent(eventName: string, eventProperties?: {}) {
+  console.log("in here now", typeof mixpanel);
   if (typeof mixpanel === "undefined") {
     // tslint:disable-next-line:no-console
     console.log(
       `Not sending event: ${eventName}, not in production environment`
     );
   } else {
+    console.log("in here");
     mixpanel.track(eventName, eventProperties);
   }
 }

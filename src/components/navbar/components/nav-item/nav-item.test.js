@@ -12,7 +12,19 @@ describe("NavItem", () => {
   });
 
   it("matches the snapshot", () => {
-    const component = renderer.create(<NavItem title="NavItem" />);
+    const component = renderer.create(<NavItem />);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("matches the snapshot on inverse", () => {
+    const component = renderer.create(<NavItem inverse={true} />);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("matches the snapshot on active", () => {
+    const component = renderer.create(<NavItem active={true} />);
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

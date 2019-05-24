@@ -3,6 +3,17 @@
 exports[`NavItem matches the snapshot 1`] = `
 <a
   className="navItem"
-  title="NavItem"
+/>
+`;
+
+exports[`NavItem matches the snapshot on active 1`] = `
+<a
+  className="navItem isActive"
+/>
+`;
+
+exports[`NavItem matches the snapshot on inverse 1`] = `
+<a
+  className="navItem inverse"
 />
 `;
