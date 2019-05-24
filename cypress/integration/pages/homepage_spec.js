@@ -11,8 +11,8 @@ describe("The Home Page", function() {
     cy.visit("http://localhost:8010");
 
     // CTA is in viewport
-    cy.isInViewport("[test-id='cta']");
-    cy.get("[test-id='cta']").click();
+    cy.isInViewport("[data-testid='landing-cta']");
+    cy.get("[data-testid='landing-cta']").click();
 
     // Wait for scroll
     cy.wait(1500);

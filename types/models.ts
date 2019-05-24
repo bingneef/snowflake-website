@@ -1,3 +1,11 @@
+export type CTATypeOptions =
+  | "github"
+  | "npm"
+  | "playstore"
+  | "appstore"
+  | "url"
+  | "comingSoon";
+
 export interface ItemProps {
   tag: string;
   title: string;
@@ -7,9 +15,9 @@ export interface ItemProps {
   techniques: string[];
   image?: boolean;
   callToAction: {
-    type: string;
+    type: CTATypeOptions;
     link?: string;
-  };
+  }[];
 }
 
 export interface ItemObjectProps {

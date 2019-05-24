@@ -91,7 +91,7 @@ function Navbar() {
     >
       <NavItem
         label="Home"
-        test-id="button"
+        data-testid="navbar-landing"
         onClick={gotoLanding}
         inverse={inverse}
         active={activeNavItem === "landing"}
@@ -99,6 +99,7 @@ function Navbar() {
 
       <NavItem
         label="Portfolio"
+        data-testid="navbar-portfolio"
         onClick={gotoPortfolio}
         inverse={inverse}
         active={activeNavItem === "portfolio"}
@@ -106,6 +107,7 @@ function Navbar() {
 
       <NavItem
         label="About"
+        data-testid="navbar-about"
         onClick={gotoAbout}
         inverse={inverse}
         active={activeNavItem === "about"}

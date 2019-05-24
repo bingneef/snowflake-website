@@ -5,7 +5,8 @@ import {
   Hotjar,
   GoogleAnalytics,
   FullStory,
-  Mixpanel
+  Mixpanel,
+  Smartlook
 } from "../src/components/analytics";
 import { styletron } from "../src/services/styletron";
 
@@ -40,6 +41,7 @@ class MyDocument extends Document {
           ))}
           <FullStory />
           <Mixpanel />
+          <Smartlook />
         </Head>
         <body>
           <Main />

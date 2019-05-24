@@ -35,7 +35,7 @@ describe("#navToPortfolio", () => {
     mixpanel.sendEvent = jest.fn();
 
     const rootInstance = component.root;
-    const $cta = rootInstance.findByProps({ "test-id": "cta" });
+    const $cta = rootInstance.findByProps({ "data-testid": "landing-cta" });
     $cta.props.onClick();
 
     expect(fullStory.sendEvent).toHaveBeenCalledWith("Landing CTA");

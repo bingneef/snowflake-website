@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Smartlook env = development matches the snapshot 1`] = `null`;
+
+exports[`Smartlook env = production matches the snapshot 1`] = `
+<script
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "
+          window.smartlook||(function(d) {
+          var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+          var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+          c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+          })(document);
+          smartlook('init', '1918e07593de805de944505d6e91fb8ceec2b696');
+          ",
+    }
+  }
+/>
+`;

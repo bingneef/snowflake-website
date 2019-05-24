@@ -1,22 +1,17 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faHeart, faRocket, faWrench } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import React, { useState } from "react";
 import { sendEvent as sendFullStoryEvent } from "../analytics/full-story";
 import { sendEvent as sendMixpanelEvent } from "../analytics/mixpanel";
 
 import { ItemObjectProps, ItemProps } from "../../../types/models";
-import { Modal } from "./components";
+import { Modal, Tabs } from "./components";
 import styles from "./portfolio.module.scss";
 
 import _portfolioItems from "./portfolio-data.json";
-const portfolioItems: ItemObjectProps = _portfolioItems;
+const portfolioItems = _portfolioItems as ItemObjectProps;
 
-library.add(faWrench, faHeart, faRocket);
-
-function Portfolio() {
-  const [activeTab, setActiveTab] = useState<TabOptions>("serious");
+function Portfolio({ initialTab = "serious" }: Props) {
+  const [activeTab, setActiveTab] = useState<TabOptions>(initialTab);
   const [modalItem, setModalItem] = useState<ItemProps | null>(null);
 
   const activeItems: ItemProps[] = portfolioItems[activeTab] || [];
@@ -25,18 +20,6 @@ function Portfolio() {
     sendFullStoryEvent("Portfolio OpenTab", { tab });
     sendMixpanelEvent("Portfolio OpenTab", { tab });
     setActiveTab(tab);
-  }
-
-  function setSeriousTab() {
-    openTab("serious");
-  }
-
-  function setToolsTab() {
-    openTab("tools");
-  }
-
-  function setFunTab() {
-    openTab("fun");
   }
 
   function closeModal() {
@@ -77,49 +60,8 @@ function Portfolio() {
             Its all about that <strong>fluffiness</strong>.
           </h2>
         </div>
-        <div className="tabs">
-          <ul>
-            <li
-              className={classNames({
-                "is-active": activeTab === "serious"
-              })}
-              onClick={setSeriousTab}
-            >
-              <a>
-                <span className="icon">
-                  <FontAwesomeIcon icon="rocket" />
-                </span>
-                <span>Serious</span>
-              </a>
-            </li>
-            <li
-              className={classNames({
-                "is-active": activeTab === "tools"
-              })}
-              onClick={setToolsTab}
-            >
-              <a>
-                <span className="icon">
-                  <FontAwesomeIcon icon="wrench" />
-                </span>
-                <span>Tools</span>
-              </a>
-            </li>
-            <li
-              className={classNames({
-                "is-active": activeTab === "fun"
-              })}
-              onClick={setFunTab}
-            >
-              <a>
-                <span className="icon">
-                  <FontAwesomeIcon icon="heart" />
-                </span>
-                <span>Fun</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+
+        <Tabs openTab={openTab} activeTab={activeTab} />
 
         <div className="columns is-multiline">
           {activeItems.map((item: ItemProps, index: number) => {
@@ -128,6 +70,7 @@ function Portfolio() {
                 key={index.toString()}
                 className="column is-3"
                 data-item-tag={item.tag}
+                data-testid={`portfolio-item-${index}`}
                 onClick={setModalItemFromEvent}
               >
                 <div className="portfolio-item-container">
@@ -156,6 +99,9 @@ function Portfolio() {
 
 Portfolio.propTypes = {};
 
-type TabOptions = "serious" | "tools" | "fun";
+export type TabOptions = "serious" | "tools" | "fun";
+interface Props {
+  initialTab?: TabOptions;
+}
 
 export default Portfolio;

@@ -2,7 +2,7 @@
   "serious": [
     {
       "title": "Snowflake Website",
-      "customer": "B&B Digital",
+      "customer": "Snowflake",
       "projectState": "Released",
       "description": "This website that is a portfolio for my work. I like to use this website to try-out new technologies and frameworks.",
       "techniques": [
@@ -10,14 +10,17 @@
         "NextJS",
         "Typescript",
         "Jest",
+        "Cypress",
         "Now",
         "Storybook",
         "Bulma"
       ],
-      "callToAction": {
-        "type": "github",
-        "link": "https://github.com/bingneef/snowflake-website"
-      },
+      "callToAction": [
+        {
+          "type": "github",
+          "link": "https://github.com/bingneef/snowflake-website"
+        }
+      ],
       "image": true,
       "tag": "snowflakewebsite"
     },
@@ -27,9 +30,16 @@
       "projectState": "Working prototype",
       "description": "The perfect wedding app for you, the to-be newly weds, and your guest. Keep them up-to-date about the programme, locations and let them submit their photos.",
       "techniques": ["React-native", "Firebase"],
-      "callToAction": {
-        "type": "comingSoon"
-      },
+      "callToAction": [
+        {
+          "type": "appstore",
+          "link": "https://itunes.apple.com/us/app/theweddingapp/id1393850966?mt=8"
+        },
+        {
+          "type": "playstore",
+          "link": "https://play.google.com/store/apps/details?id=com.snowflake.theweddingapp&gl=NL"
+        }
+      ],
       "image": true,
       "tag": "theweddingapp"
     },
@@ -45,10 +55,12 @@
         "MongoDB",
         "Facebook API"
       ],
-      "callToAction": {
-        "type": "github",
-        "link": "https://github.com/bingneef/de-punaise"
-      },
+      "callToAction": [
+        {
+          "type": "github",
+          "link": "https://github.com/bingneef/de-punaise"
+        }
+      ],
       "image": true,
       "tag": "depunaise"
     },
@@ -65,9 +77,11 @@
         "CoffeeScript",
         "Rails"
       ],
-      "callToAction": {
-        "type": "comingSoon"
-      },
+      "callToAction": [
+        {
+          "type": "comingSoon"
+        }
+      ],
       "tag": "musicgenius"
     },
     {
@@ -76,10 +90,12 @@
       "projectState": "Finished and thinking about version 2.0",
       "description": "Keep track of everything!",
       "techniques": ["Android"],
-      "callToAction": {
-        "type": "playstore",
-        "link": "https://play.google.com/store/apps/details?id=hashtag.snowflake.sportscoach&hl=en"
-      },
+      "callToAction": [
+        {
+          "type": "playstore",
+          "link": "https://play.google.com/store/apps/details?id=hashtag.snowflake.sportscoach&hl=en"
+        }
+      ],
       "image": true,
       "tag": "sportscoach"
     },
@@ -89,10 +105,12 @@
       "projectState": "Finished and (very) successfull",
       "description": "Spot let\"s you spot animals all over the world for guides to provide better safari trips. Can you spot them all? NOTE: due to recent changes in the api, the spotting only works under https (which I do not have yet), but you can still see what it does. The login credentials are username: sping & password: sping.",
       "techniques": ["PHP", "jQuery", "Material Design", "MySQL", "Android"],
-      "callToAction": {
-        "type": "url",
-        "link": "http://spot.snowflakewebdesign.nl"
-      },
+      "callToAction": [
+        {
+          "type": "url",
+          "link": "http://spot.snowflakewebdesign.nl"
+        }
+      ],
       "image": true,
       "tag": "spot"
     }
@@ -104,10 +122,12 @@
       "projectState": "Available on NPM",
       "description": "Little helper to map an array with values from another array. Useful when mapping GraphQL responses from Dataloaders.",
       "techniques": ["Javascript", "Jest", "TravisCI"],
-      "callToAction": {
-        "type": "npm",
-        "link": "https://www.npmjs.com/package/map-array-response"
-      },
+      "callToAction": [
+        {
+          "type": "npm",
+          "link": "https://www.npmjs.com/package/map-array-response"
+        }
+      ],
       "tag": "maparrayresponse"
     },
     {
@@ -116,10 +136,12 @@
       "projectState": "Ready for deployment",
       "description": "Nodejs application that allows front-end applications to communicate with sockets. The goal is to have it open for anyone that want to quickly test sockets in their application.",
       "techniques": ["Nodejs", "SocketIO", "Mysql (future)"],
-      "callToAction": {
-        "type": "github",
-        "link": "https://github.com/bingneef/node-socket"
-      },
+      "callToAction": [
+        {
+          "type": "github",
+          "link": "https://github.com/bingneef/node-socket"
+        }
+      ],
       "tag": "nodesocket"
     },
     {
@@ -128,10 +150,12 @@
       "projectState": "Available on Bower",
       "description": "Library that allows the developer to detect whether the user has certain Chrome extensions installed. The list is currently small, but is designed for large expansion.",
       "techniques": ["ChromeExtension", "Bower", "Coffee", "Sass"],
-      "callToAction": {
-        "type": "github",
-        "link": "https://github.com/bingneef/chrome-extension-detector"
-      },
+      "callToAction": [
+        {
+          "type": "github",
+          "link": "https://github.com/bingneef/chrome-extension-detector"
+        }
+      ],
       "tag": "chrome-extension-detector"
     }
   ],
@@ -142,10 +166,12 @@
       "projectState": "Working in Dev",
       "description": "Play hangman with your own Google Home.",
       "techniques": ["Google Home", "DialogFlow"],
-      "callToAction": {
-        "type": "github",
-        "link": "https://github.com/bingneef/GoogleHomeHangman"
-      },
+      "callToAction": [
+        {
+          "type": "github",
+          "link": "https://github.com/bingneef/GoogleHomeHangman"
+        }
+      ],
       "tag": "googlehomehangman"
     },
     {
@@ -154,10 +180,12 @@
       "projectState": "Finished & in the PlayStore",
       "description": "An Android application for when you forgot your bikelight. The screen illuminates red (backlight) and the white/yellow flash replaces your front-light. This was my first Android App.",
       "techniques": ["Android"],
-      "callToAction": {
-        "type": "playstore",
-        "link": "https://play.google.com/store/apps/details?id=com.hashtag.bikelight&hl=en"
-      },
+      "callToAction": [
+        {
+          "type": "playstore",
+          "link": "https://play.google.com/store/apps/details?id=com.hashtag.bikelight&hl=en"
+        }
+      ],
       "image": true,
       "tag": "bikelight"
     }

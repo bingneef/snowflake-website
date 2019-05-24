@@ -1,18 +1,9 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faGithub,
-  faGooglePlay,
-  faNpm
-} from "@fortawesome/free-brands-svg-icons";
-import { faGlobe, faRocket } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import React, { useEffect } from "react";
 
 import { ItemProps } from "../../../../../types/models";
+import CallToAction from "./components/call-to-action";
 import styles from "./modal.module.scss";
-
-library.add(faGithub, faGooglePlay, faNpm, faGlobe, faRocket);
 
 function Modal({ item, closeModal }: Props) {
   function handleKeyEvent(event: KeyboardEvent) {
@@ -76,70 +67,10 @@ function Modal({ item, closeModal }: Props) {
             </div>
           </div>
           <div>
-            {item.callToAction && item.callToAction.type === "github" && (
-              <a
-                className="button is-medium is-info"
-                href={item.callToAction && item.callToAction.link}
-                target="_blank"
-              >
-                <span className="icon">
-                  <FontAwesomeIcon icon={["fab", "github"]} />
-                </span>
-                <span>View on Github</span>
-              </a>
-            )}
-
-            {item.callToAction && item.callToAction.type === "npm" && (
-              <a
-                className="button is-medium is-info"
-                href={item.callToAction && item.callToAction.link}
-                target="_blank"
-              >
-                <span className="icon">
-                  <FontAwesomeIcon icon={["fab", "npm"]} />
-                </span>
-                <span>View on NPM</span>
-              </a>
-            )}
-
-            {item.callToAction && item.callToAction.type === "playstore" && (
-              <a
-                className="button is-medium is-info"
-                href={item.callToAction && item.callToAction.link}
-                target="_blank"
-              >
-                <span className="icon">
-                  <FontAwesomeIcon icon={["fab", "google-play"]} />
-                </span>
-                <span>View on PlayStore</span>
-              </a>
-            )}
-
-            {item.callToAction && item.callToAction.type === "url" && (
-              <a
-                className="button is-medium is-info"
-                href={item.callToAction && item.callToAction.link}
-                target="_blank"
-              >
-                <span className="icon">
-                  <FontAwesomeIcon icon={"globe"} />
-                </span>
-                <span>Go to the website</span>
-              </a>
-            )}
-
-            {item.callToAction && item.callToAction.type === "comingSoon" && (
-              <a
-                className="button is-medium is-info"
-                href={item.callToAction && item.callToAction.link}
-                target="_blank"
-              >
-                <span className="icon">
-                  <FontAwesomeIcon icon={"rocket"} />
-                </span>
-                <span>Coming soon!</span>
-              </a>
-            )}
+            {Array.isArray(item.callToAction) &&
+              item.callToAction.map(({ type, link }) => (
+                <CallToAction key={type} type={type} link={link} />
+              ))}
           </div>
         </div>
       </div>
