@@ -11,19 +11,21 @@ exports[`Home matches the snapshot 1`] = `
   >
     <a
       className="navItem isActive"
+      data-testid="navbar-landing"
       onClick={[Function]}
-      test-id="button"
     >
       Home
     </a>
     <a
       className="navItem"
+      data-testid="navbar-portfolio"
       onClick={[Function]}
     >
       Portfolio
     </a>
     <a
       className="navItem"
+      data-testid="navbar-about"
       onClick={[Function]}
     >
       About
@@ -87,7 +89,7 @@ exports[`Home matches the snapshot 1`] = `
     >
       <div
         className="ripplePlaceholder"
-        test-id="cta"
+        data-testid="landing-cta"
       >
         <a
           className="button is-success button nextButton"

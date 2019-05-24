@@ -8,19 +8,21 @@ exports[`Navbar matches the snapshot 1`] = `
 >
   <a
     className="navItem isActive"
+    data-testid="navbar-landing"
     onClick={[Function]}
-    test-id="button"
   >
     Home
   </a>
   <a
     className="navItem"
+    data-testid="navbar-portfolio"
     onClick={[Function]}
   >
     Portfolio
   </a>
   <a
     className="navItem"
+    data-testid="navbar-about"
     onClick={[Function]}
   >
     About
