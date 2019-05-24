@@ -2,6 +2,7 @@ export type CTATypeOptions =
   | "github"
   | "npm"
   | "playstore"
+  | "appstore"
   | "url"
   | "comingSoon";
 
@@ -16,7 +17,7 @@ export interface ItemProps {
   callToAction: {
     type: CTATypeOptions;
     link?: string;
-  };
+  }[];
 }
 
 export interface ItemObjectProps {

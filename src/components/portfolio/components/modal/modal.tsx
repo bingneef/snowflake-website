@@ -67,12 +67,10 @@ function Modal({ item, closeModal }: Props) {
             </div>
           </div>
           <div>
-            {item.callToAction && (
-              <CallToAction
-                type={item.callToAction.type}
-                link={item.callToAction.link}
-              />
-            )}
+            {Array.isArray(item.callToAction) &&
+              item.callToAction.map(({ type, link }) => (
+                <CallToAction key={type} type={type} link={link} />
+              ))}
           </div>
         </div>
       </div>
