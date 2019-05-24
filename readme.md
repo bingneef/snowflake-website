@@ -1,0 +1,2 @@
+# Snowflake webdesign website
+[![Coverage Status](https://coveralls.io/repos/github/bingneef/snowflake-website/badge.svg?branch=master)](https://coveralls.io/github/bingneef/snowflake-website?branch=master)
