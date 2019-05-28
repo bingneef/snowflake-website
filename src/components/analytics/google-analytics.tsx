@@ -11,19 +11,13 @@ export function sendEvent({
   eventLabel,
   eventValue
 }: EventConfig) {
-  if (typeof ga === "undefined") {
+  if (typeof gtag === "undefined") {
     // tslint:disable-next-line:no-console
     console.log(
       `Not sending event: ${eventCategory}:${eventAction}, not in production environment`
     );
   } else {
-    ga.send({
-      eventAction,
-      eventCategory,
-      eventLabel,
-      eventValue,
-      hitType: "event"
-    });
+    gtag("event", eventAction, { eventCategory, eventLabel, eventValue });
   }
 }
 

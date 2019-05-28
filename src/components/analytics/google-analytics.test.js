@@ -46,9 +46,9 @@ describe("GoogleAnalytics", () => {
 });
 
 describe("#sendEvent", () => {
-  it("logs if ga is not defined", () => {
+  it("logs if gtag is not defined", () => {
     console.log = jest.fn();
-    window.ga = undefined;
+    window.gtag = undefined;
 
     sendEvent({ eventCategory: "TestEvent", eventAction: "Sending Event" });
 
@@ -57,10 +57,8 @@ describe("#sendEvent", () => {
     );
   });
 
-  it("sends to ga if defined", () => {
-    window.ga = {
-      send: jest.fn()
-    };
+  it("sends to gtag if defined", () => {
+    window.gtag = jest.fn();
 
     sendEvent({
       eventCategory: "TestEvent",
@@ -69,10 +67,8 @@ describe("#sendEvent", () => {
       eventValue: "EventValue"
     });
 
-    expect(window.ga.send).toHaveBeenCalledWith({
-      hitType: "event",
+    expect(window.gtag).toHaveBeenCalledWith("event", "Sending Event", {
       eventCategory: "TestEvent",
-      eventAction: "Sending Event",
       eventLabel: "Event label",
       eventValue: "EventValue"
     });

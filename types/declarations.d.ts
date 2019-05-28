@@ -13,9 +13,6 @@ type GAEventInterface = {
   eventLabel?: string;
   eventValue?: string;
 };
-interface GAInterface {
-  send: (event: GAEventInterface) => null;
-}
 
 type Smartlook = (
   eventType: string,
@@ -29,4 +26,8 @@ declare module "react-ab-test";
 declare var FS: FSInterface;
 declare var mixpanel: MixpanelInterface;
 declare var smartlook: Smartlook;
-declare var ga: GAInterface;
+declare var gtag: (
+  event: string,
+  action: string,
+  config: { [key: string]: string | undefined }
+) => null;
