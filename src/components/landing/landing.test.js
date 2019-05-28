@@ -9,7 +9,7 @@ import Landing from "./landing";
 import jump from "jump.js";
 import * as fullStory from "../analytics/full-story";
 import * as mixpanel from "../analytics/mixpanel";
-import * as dataLayer from "../analytics/google-analytics";
+import * as ga from "../analytics/google-analytics";
 
 describe("Landing", () => {
   it("renders without error", () => {
@@ -34,7 +34,7 @@ describe("#navToPortfolio", () => {
   it("calls sendEvents with Landing CTA", () => {
     fullStory.sendEvent = jest.fn();
     mixpanel.sendEvent = jest.fn();
-    dataLayer.sendEvent = jest.fn();
+    ga.sendEvent = jest.fn();
 
     const rootInstance = component.root;
     const $cta = rootInstance.findByProps({ "data-testid": "landing-cta" });
@@ -42,6 +42,9 @@ describe("#navToPortfolio", () => {
 
     expect(fullStory.sendEvent).toHaveBeenCalledWith("Landing CTA");
     expect(mixpanel.sendEvent).toHaveBeenCalledWith("Landing CTA");
-    expect(dataLayer.sendEvent).toHaveBeenCalledWith("Landing CTA");
+    expect(ga.sendEvent).toHaveBeenCalledWith({
+      eventCategory: "Landing",
+      eventAction: "CTA"
+    });
   });
 });

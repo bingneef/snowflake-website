@@ -1,17 +1,28 @@
-interface DataLayerConfig {
-  [x: string]: any;
+interface EventConfig {
+  eventCategory: string;
+  eventAction: string;
+  eventLabel?: string;
+  eventValue?: string;
 }
 
-export function sendEvent(eventName: string, config: DataLayerConfig) {
-  if (typeof dataLayer === "undefined") {
+export function sendEvent({
+  eventAction,
+  eventCategory,
+  eventLabel,
+  eventValue
+}: EventConfig) {
+  if (typeof ga === "undefined") {
     // tslint:disable-next-line:no-console
     console.log(
-      `Not sending event: ${eventName}, not in production environment`
+      `Not sending event: ${eventCategory}:${eventAction}, not in production environment`
     );
   } else {
-    dataLayer.push({
-      event: eventName,
-      ...(config || {})
+    ga.send({
+      eventAction,
+      eventCategory,
+      eventLabel,
+      eventValue,
+      hitType: "event"
     });
   }
 }
@@ -36,6 +47,20 @@ function GoogleAnalytics() {
 
             gtag('config', 'UA-77301580-1', { 'optimize_id': 'GTM-TD486C3'});
           `
+        }}
+      />
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `.async-hide { opacity: 0 !important} `
+        }}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'OPT_CONTAINER_ID':true});`
         }}
       />
     </>

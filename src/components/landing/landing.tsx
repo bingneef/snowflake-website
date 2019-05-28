@@ -12,7 +12,7 @@ function Landing() {
   function navToPortfolio() {
     sendFullStoryEvent("Landing CTA");
     sendMixpanelEvent("Landing CTA");
-    sendDataLayerEvent("Landing CTA");
+    sendDataLayerEvent({ eventCategory: "Landing", eventAction: "CTA" });
 
     const $el = document.querySelector("#portfolio");
     if ($el !== null) {

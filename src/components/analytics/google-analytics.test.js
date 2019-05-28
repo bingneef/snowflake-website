@@ -46,27 +46,35 @@ describe("GoogleAnalytics", () => {
 });
 
 describe("#sendEvent", () => {
-  it("logs if dataLayer is not defined", () => {
+  it("logs if ga is not defined", () => {
     console.log = jest.fn();
-    window.dataLayer = undefined;
+    window.ga = undefined;
 
-    sendEvent("TestEvent");
+    sendEvent({ eventCategory: "TestEvent", eventAction: "Sending Event" });
 
     expect(console.log).toHaveBeenCalledWith(
-      "Not sending event: TestEvent, not in production environment"
+      "Not sending event: TestEvent:Sending Event, not in production environment"
     );
   });
 
-  it("sends to dataLayer if defined", () => {
-    window.dataLayer = {
-      push: jest.fn()
+  it("sends to ga if defined", () => {
+    window.ga = {
+      send: jest.fn()
     };
 
-    sendEvent("TestEvent", { a: true });
+    sendEvent({
+      eventCategory: "TestEvent",
+      eventAction: "Sending Event",
+      eventLabel: "Event label",
+      eventValue: "EventValue"
+    });
 
-    expect(window.dataLayer.push).toHaveBeenCalledWith({
-      event: "TestEvent",
-      a: true
+    expect(window.ga.send).toHaveBeenCalledWith({
+      hitType: "event",
+      eventCategory: "TestEvent",
+      eventAction: "Sending Event",
+      eventLabel: "Event label",
+      eventValue: "EventValue"
     });
   });
 });

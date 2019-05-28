@@ -6,11 +6,15 @@ interface MixpanelInterface {
   track: (eventName: string, eventProperties?: {}) => null;
 }
 
-type DataLayerConfig = {
-  [x: string]: any;
+type GAEventInterface = {
+  hitType: string;
+  eventCategory: string;
+  eventAction: string;
+  eventLabel?: string;
+  eventValue?: string;
 };
-interface DataLayerInterface {
-  push: ({ event: string, ...DataLayerConfig }) => null;
+interface GAInterface {
+  send: (event: GAEventInterface) => null;
 }
 
 type Smartlook = (
@@ -25,4 +29,4 @@ declare module "react-ab-test";
 declare var FS: FSInterface;
 declare var mixpanel: MixpanelInterface;
 declare var smartlook: Smartlook;
-declare var dataLayer: DataLayerInterface;
+declare var ga: GAInterface;

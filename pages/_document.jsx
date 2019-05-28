@@ -42,6 +42,7 @@ class MyDocument extends Document {
           <FullStory />
           <Mixpanel />
           <Smartlook />
+          <GoogleAnalytics />
         </Head>
         <body>
           <Main />
@@ -49,7 +50,6 @@ class MyDocument extends Document {
         </body>
 
         <Hotjar />
-        <GoogleAnalytics />
       </html>
     );
   }
