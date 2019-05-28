@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
+import { render, fireEvent, cleanup } from "react-testing-library";
 
 import Navbar from "./navbar";
 

@@ -8,25 +8,29 @@ describe("Navigation", function() {
   });
 
   it("scrolls to the sections on click", function() {
+    const items = ["about", "portfolio", "landing"];
+
     function generateTestIdQuery(testId) {
       return `[data-testid='navbar-${testId}']`;
     }
 
-    // Navbar is in viewport
-    cy.isInViewport(generateTestIdQuery("landing"));
-    cy.isInViewport(generateTestIdQuery("portfolio"));
-    cy.isInViewport(generateTestIdQuery("about"));
+    // All items of the navbar are in the viewport
+    for (let item of items) {
+      cy.isInViewport(generateTestIdQuery(item));
+    }
 
-    cy.get(generateTestIdQuery("portfolio")).click();
-    cy.wait(1500);
-    cy.isAtTopOfViewport("#portfolio");
+    function doCheck(testId) {
+      cy.get(generateTestIdQuery(testId)).click();
+      cy.wait(1500);
+      cy.isAtTopOfViewport(`#${testId}`);
+      cy.get(generateTestIdQuery(testId))
+        .invoke("attr", "class")
+        .should("contain", "isActive___");
+    }
 
-    cy.get(generateTestIdQuery("about")).click();
-    cy.wait(1500);
-    cy.isAtTopOfViewport("#about");
-
-    cy.get(generateTestIdQuery("landing")).click();
-    cy.wait(1500);
-    cy.isAtTopOfViewport("#landing");
+    // Click and validate
+    for (let item of items) {
+      doCheck(item);
+    }
   });
 });
