@@ -25,6 +25,7 @@ class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
+          <GoogleAnalytics />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
@@ -42,7 +43,6 @@ class MyDocument extends Document {
           <FullStory />
           <Mixpanel />
           <Smartlook />
-          <GoogleAnalytics />
         </Head>
         <body>
           <Main />
