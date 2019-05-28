@@ -4,7 +4,7 @@ const BASE_URL = "http://localhost:8010";
 
 describe("Portfolio", function() {
   beforeEach(function() {
-    cy.visit("http://localhost:8010");
+    cy.visit(BASE_URL);
     cy.get("#portfolio").scrollIntoView();
   });
 

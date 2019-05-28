@@ -4,7 +4,7 @@ const BASE_URL = "http://localhost:8010";
 
 describe("Navigation", function() {
   beforeEach(function() {
-    cy.visit("http://localhost:8010");
+    cy.visit(BASE_URL);
   });
 
   it("scrolls to the sections on click", function() {

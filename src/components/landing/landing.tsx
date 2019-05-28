@@ -3,6 +3,7 @@ import jump from "jump.js";
 import React from "react";
 
 import { sendEvent as sendFullStoryEvent } from "../analytics/full-story";
+import { sendEvent as sendDataLayerEvent } from "../analytics/google-analytics";
 import { sendEvent as sendMixpanelEvent } from "../analytics/mixpanel";
 import { RippleButton } from "./components";
 import styles from "./landing.module.scss";
@@ -11,6 +12,7 @@ function Landing() {
   function navToPortfolio() {
     sendFullStoryEvent("Landing CTA");
     sendMixpanelEvent("Landing CTA");
+    sendDataLayerEvent("Landing CTA");
 
     const $el = document.querySelector("#portfolio");
     if ($el !== null) {

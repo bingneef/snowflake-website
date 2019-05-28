@@ -6,6 +6,13 @@ interface MixpanelInterface {
   track: (eventName: string, eventProperties?: {}) => null;
 }
 
+type DataLayerConfig = {
+  [x: string]: any;
+};
+interface DataLayerInterface {
+  push: ({ event: string, ...DataLayerConfig }) => null;
+}
+
 type Smartlook = (
   eventType: string,
   eventName: string,
@@ -18,3 +25,4 @@ declare module "react-ab-test";
 declare var FS: FSInterface;
 declare var mixpanel: MixpanelInterface;
 declare var smartlook: Smartlook;
+declare var dataLayer: DataLayerInterface;
