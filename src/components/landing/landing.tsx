@@ -5,6 +5,7 @@ import React from "react";
 import { sendEvent as sendFullStoryEvent } from "../analytics/full-story";
 import { sendEvent as sendGoogleAnalyticsEvent } from "../analytics/google-analytics";
 import { sendEvent as sendMixpanelEvent } from "../analytics/mixpanel";
+import Experiment from "../experiment";
 import { RippleButton } from "./components";
 import styles from "./landing.module.scss";
 
@@ -20,6 +21,11 @@ function Landing() {
     }
   }
 
+  const variants = [
+    <RippleButton key={1} data-testid="landing-cta" onClick={navToPortfolio} />,
+    undefined
+  ];
+
   return (
     <section id="landing" className="hero is-fullheight is-info">
       <div className="hero-body">
@@ -33,7 +39,7 @@ function Landing() {
         </div>
       </div>
       <div className="hero-foot has-text-centered">
-        <RippleButton data-testid="landing-cta" onClick={navToPortfolio} />
+        <Experiment id="Yd8AnACSQoiC0D4gPx8Juw" variants={variants} />
       </div>
     </section>
   );

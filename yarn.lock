@@ -3034,7 +3034,7 @@ babel-plugin-add-react-displayname@^0.0.5:
   resolved "https://registry.yarnpkg.com/babel-plugin-add-react-displayname/-/babel-plugin-add-react-displayname-0.0.5.tgz#339d4cddb7b65fd62d1df9db9fe04de134122bd5"
   integrity sha1-M51M3be2X9YtHfnbn+BN4TQSK9U=
 
-babel-plugin-dynamic-import-node@2.2.0:
+babel-plugin-dynamic-import-node@2.2.0, babel-plugin-dynamic-import-node@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-2.2.0.tgz#c0adfb07d95f4a4495e9aaac6ec386c4d7c2524e"
   integrity sha512-fP899ELUnTaBcIzmrW7nniyqqdYWrWuJUyPWHxFa/c7r7hS6KC8FscNfLlBNIoPSc55kYMGEEKjPjJGCLbE1qA==
@@ -7433,6 +7433,11 @@ jest-mock@^24.7.0:
   dependencies:
     "@jest/types" "^24.7.0"
 
+jest-next-dynamic@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/jest-next-dynamic/-/jest-next-dynamic-1.0.0.tgz#afb041fc24b566549b9cc81ca2e7d4d7a9dbee75"
+  integrity sha512-4xba6EImlD2Cpp2J9ann+9bzAu0rPNi44CLf4jLNWCCg+xZnLmzSr8AQlG/LhFv8RRZF47r9w+oIuH5fm8XnDg==
+
 jest-pnp-resolver@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.1.tgz#ecdae604c077a7fbc70defb6d517c3c1c898923a"
@@ -10278,6 +10283,10 @@ react-movable@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/react-movable/-/react-movable-2.0.1.tgz#0293bef67854cc22e288d245d813963451476663"
   integrity sha512-zOW/K7iXcJyKF0+D54R6fJCHyDfXPRWwk2H9W/N9YCGBrK/Nw/QWxQBn8AynupBikY0J+HMSlqs8cqIwjiZWzQ==
+
+react-optimize@bingneef/react-optimize:
+  version "1.0.2"
+  resolved "https://codeload.github.com/bingneef/react-optimize/tar.gz/ff9df221b40987e8289ac2473c43e2221a5d1d02"
 
 react-popper-tooltip@^2.8.0:
   version "2.8.2"

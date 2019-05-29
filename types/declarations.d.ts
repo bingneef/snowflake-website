@@ -22,7 +22,7 @@ type Smartlook = (
 
 declare module "baseui/button";
 declare module "styletron-engine-atomic";
-declare module "react-ab-test";
+declare module "react-optimize";
 declare var FS: FSInterface;
 declare var mixpanel: MixpanelInterface;
 declare var smartlook: Smartlook;
