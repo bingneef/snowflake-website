@@ -20,6 +20,7 @@ type Smartlook = (
   eventProperties?: {}
 ) => null;
 
+declare module "@bingneef/react-optimize";
 declare module "baseui/button";
 declare module "styletron-engine-atomic";
 declare module "react-optimize";
