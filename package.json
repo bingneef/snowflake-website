@@ -40,6 +40,7 @@
     }
   },
   "dependencies": {
+    "@bingneef/react-optimize": "^1.0.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-brands-svg-icons": "^5.8.2",
     "@fortawesome/free-regular-svg-icons": "^5.8.2",
@@ -67,7 +68,6 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-optimize": "bingneef/react-optimize",
     "react-test-renderer": "^16.8.6",
     "styletron-engine-atomic": "^1.1.1",
     "styletron-react": "^5.0.0"

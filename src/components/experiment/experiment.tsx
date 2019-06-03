@@ -1,5 +1,8 @@
+import {
+  Experiment as OptimizeExperiment,
+  Variant
+} from "@bingneef/react-optimize";
 import React, { ReactNode } from "react";
-import { Experiment as OptimizeExperiment, Variant } from "react-optimize";
 
 function Experiment({ id, variants, loader }: Props) {
   return (

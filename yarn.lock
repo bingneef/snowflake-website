@@ -1208,6 +1208,11 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@bingneef/react-optimize@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@bingneef/react-optimize/-/react-optimize-1.0.3.tgz#8e0cf5a023544792b19ed939e9afd5b272ca45e9"
+  integrity sha512-jyKo7a9GNEm+bxD7wDstLFwFItJUXRzd+T8BKj4DA9FFE+FDVXMO2+vWOIfPfORL7MGxOQw90jCvFZBJVv9PXQ==
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.3.tgz#099139eaec7ebf07a27c1786a3ff64f39464d2ef"
@@ -10283,10 +10288,6 @@ react-movable@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/react-movable/-/react-movable-2.0.1.tgz#0293bef67854cc22e288d245d813963451476663"
   integrity sha512-zOW/K7iXcJyKF0+D54R6fJCHyDfXPRWwk2H9W/N9YCGBrK/Nw/QWxQBn8AynupBikY0J+HMSlqs8cqIwjiZWzQ==
-
-react-optimize@bingneef/react-optimize:
-  version "1.0.2"
-  resolved "https://codeload.github.com/bingneef/react-optimize/tar.gz/ff9df221b40987e8289ac2473c43e2221a5d1d02"
 
 react-popper-tooltip@^2.8.0:
   version "2.8.2"
