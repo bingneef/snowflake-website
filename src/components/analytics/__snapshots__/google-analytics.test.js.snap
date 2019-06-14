@@ -1,26 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GoogleAnalytics env = development matches the snapshot 1`] = `
-Array [
-  <script
-    async={true}
-    src="https://www.googletagmanager.com/gtag/js?id=UA-77301580-1"
-  />,
-  <script
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-77301580-1', { 'optimize_id': 'GTM-TD486C3'});
-          ",
-      }
-    }
-  />,
-]
-`;
+exports[`GoogleAnalytics env = development matches the snapshot 1`] = `null`;
 
 exports[`GoogleAnalytics env = production matches the snapshot 1`] = `
 Array [
