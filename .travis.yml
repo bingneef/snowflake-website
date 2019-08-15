@@ -15,6 +15,10 @@ addons:
   apt:
     packages:
     - libgconf-2-4
+cache:
+  directories:
+    - ~/.npm
+    - ~/.cache
 jobs:
   include:
     - stage: test
