@@ -1,13 +1,12 @@
 import classNames from "classnames";
 import jump from "jump.js";
 import React from "react";
-import { useSpring, animated } from "react-spring";
+import { animated, useSpring } from "react-spring";
 import { useGesture } from "react-use-gesture";
 
 import { sendEvent as sendFullStoryEvent } from "../analytics/full-story";
 import { sendEvent as sendGoogleAnalyticsEvent } from "../analytics/google-analytics";
 import { sendEvent as sendMixpanelEvent } from "../analytics/mixpanel";
-import { sendEvent as sendVwoEvent } from "../analytics/vwo";
 import { RippleButton } from "./components";
 import styles from "./landing.module.scss";
 
@@ -24,8 +23,10 @@ function Landing() {
   function navToPortfolio() {
     sendFullStoryEvent("Landing CTA");
     sendMixpanelEvent("Landing CTA");
-    sendGoogleAnalyticsEvent({ eventCategory: "Landing", eventAction: "CTA" });
-    sendVwoEvent("goalConversion");
+    sendGoogleAnalyticsEvent({
+      eventAction: "CTA",
+      eventCategory: "Landing"
+    });
 
     const $el = document.querySelector("#portfolio");
     if ($el !== null) {
@@ -34,20 +35,33 @@ function Landing() {
   }
 
   const [props, set] = useSpring(() => ({
-    xy: [0, 0],
+    config: {
+      friction: 140,
+      mass: 10,
+      tension: 550
+    },
     local: [0, 0],
-    config: { mass: 10, tension: 550, friction: 140 }
+    xy: [0, 0]
   }));
 
   const { local } = props;
 
-  const bind = useGesture({ onDrag: ({ local }) => set({ local }) });
+  const bind = useGesture({
+    onDrag: ({ local: gestureLocal }) => set({ local: gestureLocal })
+  });
+
+  function handleMouseMove({
+    clientX: x,
+    clientY: y
+  }: React.MouseEvent<HTMLElement, MouseEvent>) {
+    set({ xy: calc(x, y) });
+  }
 
   return (
     <section
       id="landing"
       className="hero is-fullheight is-info"
-      onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
+      onMouseMove={handleMouseMove}
     >
       <div className="hero-body">
         <div className={classNames("container", styles.container)}>
@@ -64,7 +78,9 @@ function Landing() {
               />
             </animated.div>
             <animated.div
-              style={{ transform: props.xy.interpolate(trans2) }}
+              style={{
+                transform: props.xy.interpolate(trans2)
+              }}
               className={classNames("logo", styles.logo)}
             >
               <img
