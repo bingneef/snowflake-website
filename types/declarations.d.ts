@@ -20,12 +20,17 @@ type Smartlook = (
   eventProperties?: {}
 ) => null;
 
+type VwoInterface = {
+  push: (args: any) => null;
+};
+
 declare module "baseui/button";
 declare module "styletron-engine-atomic";
 declare module "react-ab-test";
 declare var FS: FSInterface;
 declare var mixpanel: MixpanelInterface;
 declare var smartlook: Smartlook;
+declare var VWO: VwoInterface;
 declare var gtag: (
   event: string,
   action: string,

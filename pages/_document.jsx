@@ -6,7 +6,8 @@ import {
   GoogleAnalytics,
   FullStory,
   Mixpanel,
-  Smartlook
+  Smartlook,
+  Vwo
 } from "../src/components/analytics";
 import { styletron } from "../src/services/styletron";
 
@@ -43,6 +44,7 @@ class MyDocument extends Document {
           <FullStory />
           <Mixpanel />
           <Smartlook />
+          <Vwo />
         </Head>
         <body>
           <Main />

@@ -4,6 +4,7 @@ import GoogleAnalytics from "./google-analytics";
 import Hotjar from "./hotjar";
 import Mixpanel from "./mixpanel";
 import Smartlook from "./smartlook";
+import Vwo from "./vwo";
 
 export {
   /* PLOP_INJECT_EXPORT */
@@ -11,5 +12,6 @@ export {
   GoogleAnalytics,
   Hotjar,
   Mixpanel,
-  Smartlook
+  Smartlook,
+  Vwo
 };
