@@ -61,6 +61,7 @@ exports[`Home matches the snapshot 1`] = `
   <section
     className="hero is-fullheight is-info"
     id="landing"
+    onMouseMove={[Function]}
   >
     <div
       className="hero-body"
@@ -68,10 +69,36 @@ exports[`Home matches the snapshot 1`] = `
       <div
         className="container container"
       >
-        <img
-          className="logo logo"
-          src="/static/assets/images/snowflake.svg"
-        />
+        <div
+          className="logoContainer"
+        >
+          <div
+            className="logo logo"
+            style={
+              Object {
+                "transform": "translate3d(0px,0px,0)",
+              }
+            }
+          >
+            <img
+              className="logo logo"
+              src="/static/assets/images/snowflake_background.svg"
+            />
+          </div>
+          <div
+            className="logo logo"
+            style={
+              Object {
+                "transform": "translate3d(0px,0px,0)",
+              }
+            }
+          >
+            <img
+              className="logo logo"
+              src="/static/assets/images/snowflake_S.svg"
+            />
+          </div>
+        </div>
         <h1
           className="title"
         >
@@ -89,10 +116,10 @@ exports[`Home matches the snapshot 1`] = `
     >
       <div
         className="ripplePlaceholder"
-        data-testid="landing-cta"
       >
         <a
           className="button is-success button nextButton"
+          data-testid="landing-cta"
           onClick={[Function]}
         >
           <svg

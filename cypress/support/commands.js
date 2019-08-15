@@ -1,3 +1,7 @@
+import { addMatchImageSnapshotCommand } from "cypress-image-snapshot/command";
+
+addMatchImageSnapshotCommand();
+
 Cypress.Commands.add("isInViewport", element => {
   cy.get(element).then($el => {
     const height = Cypress.$(cy.state("window")).height();

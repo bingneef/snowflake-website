@@ -2,7 +2,8 @@ jest.mock("jump.js");
 
 import React from "react";
 import ReactDOM from "react-dom";
-import renderer from "react-test-renderer";
+
+import { render, fireEvent } from "@testing-library/react";
 
 import Landing from "./landing";
 
@@ -19,26 +20,20 @@ describe("Landing", () => {
   });
 
   it("matches the snapshot", () => {
-    const component = renderer.create(<Landing />);
-    let tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<Landing />);
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
 
 describe("#navToPortfolio", () => {
-  let component;
-  beforeEach(() => {
-    component = renderer.create(<Landing />);
-  });
-
-  it("calls sendEvents with Landing CTA", () => {
+  it("calls sendEvents with Landing CTA", async () => {
     fullStory.sendEvent = jest.fn();
     mixpanel.sendEvent = jest.fn();
     ga.sendEvent = jest.fn();
 
-    const rootInstance = component.root;
-    const $cta = rootInstance.findByProps({ "data-testid": "landing-cta" });
-    $cta.props.onClick();
+    const { getByTestId } = render(<Landing />);
+    const $cta = getByTestId("landing-cta");
+    const resp = fireEvent.click($cta);
 
     expect(fullStory.sendEvent).toHaveBeenCalledWith("Landing CTA");
     expect(mixpanel.sendEvent).toHaveBeenCalledWith("Landing CTA");

@@ -11,3 +11,4 @@ coverage
 
 # Cypress
 cypress/videos
+cypress/**/__diff_output__
