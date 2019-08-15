@@ -5,7 +5,6 @@ const BASE_URL = "http://localhost:8010";
 describe("The Home Page", function() {
   it("successfully loads", function() {
     cy.visit(BASE_URL);
-    cy.get("#landing").matchImageSnapshot();
   });
 
   it("scrolls to the next section on CTA", function() {
