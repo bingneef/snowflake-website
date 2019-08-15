@@ -78,7 +78,7 @@ function Landing() {
             >
               <img
                 className={classNames("logo", styles.logo)}
-                src="/static/assets/images/snowflake_s.svg"
+                src="/static/assets/images/snowflake_S.svg"
               />
             </animated.div>
           </div>
