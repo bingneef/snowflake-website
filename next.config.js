@@ -1,6 +1,9 @@
 const withCSS = require("@zeit/next-css");
 const withTypescript = require("@zeit/next-typescript");
 const withSass = require("@zeit/next-sass");
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true"
+});
 
 const payload = {
   cssModules: true,
@@ -14,4 +17,4 @@ if (process.env.__NEXT_BUILDER_EXPERIMENTAL_TARGET) {
   payload.target = process.env.__NEXT_BUILDER_EXPERIMENTAL_TARGET;
 }
 
-module.exports = withTypescript(withSass(withCSS(payload)));
+module.exports = withBundleAnalyzer(withTypescript(withSass(withCSS(payload))));

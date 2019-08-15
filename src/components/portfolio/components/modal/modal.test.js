@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
-import { render, fireEvent, cleanup } from "react-testing-library";
+import { render, fireEvent, act } from "@testing-library/react";
 
 import Modal from "./modal";
 
@@ -31,37 +31,28 @@ describe("Modal", () => {
 });
 
 describe("#handleKeyEvent", () => {
-  it("closes the modal on escape", () => {
+  it("closes the modal on escape", async () => {
     const closeModal = jest.fn();
     const { container } = render(
       <Modal {...defaultProps} closeModal={closeModal} />
     );
 
-    fireEvent(
-      container,
-      new KeyboardEvent("keyup", {
-        key: "Escape",
-        keyCode: 27,
-        which: 27,
-        bubbles: true
-      })
-    );
+    act(() => {
+      fireEvent.keyUp(container, { key: "Escape", keyCode: 27 });
+    });
 
     expect(closeModal).toHaveBeenCalledTimes(1);
   });
+
   it("does not close the modal on another key", () => {
     const closeModal = jest.fn();
-    const { container } = render(<Modal item={{}} closeModal={closeModal} />);
-
-    fireEvent(
-      container,
-      new KeyboardEvent("keyup", {
-        key: "Enter",
-        keyCode: 13,
-        which: 13,
-        bubbles: true
-      })
+    const { container } = render(
+      <Modal {...defaultProps} closeModal={closeModal} />
     );
+
+    act(() => {
+      fireEvent.keyUp(container, { key: "Enter", keyCode: 13 });
+    });
 
     expect(closeModal).not.toHaveBeenCalled();
   });

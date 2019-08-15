@@ -2,10 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { render, fireEvent, cleanup } from "react-testing-library";
-
-// add custom jest matchers from jest-dom
-import "jest-dom/extend-expect";
+import { render, fireEvent, cleanup } from "@testing-library/react";
 
 import TabItem from "./tab-item";
 

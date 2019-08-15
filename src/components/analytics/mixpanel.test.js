@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
-import { render, fireEvent, cleanup } from "react-testing-library";
+import { render, fireEvent, cleanup } from "@testing-library/react";
 
 import MixPanel, { sendEvent } from "./mixpanel";
 

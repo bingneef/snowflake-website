@@ -2,103 +2,81 @@
 
 exports[`Landing matches the snapshot 1`] = `
 <section
-  className="hero is-fullheight is-info"
+  class="hero is-fullheight is-info"
   id="landing"
-  onMouseMove={[Function]}
 >
   <div
-    className="hero-body"
+    class="hero-body"
   >
     <div
-      className="container container"
+      class="container container"
     >
       <div
-        className="logoContainer"
+        class="logoContainer"
       >
         <div
-          className="logo logo"
-          style={
-            Object {
-              "transform": "translate3d(0px,0px,0)",
-            }
-          }
+          class="logo logo"
+          style="transform: translate3d(0px,0px,0);"
         >
           <img
-            className="logo logo"
+            class="logo logo"
             src="/static/assets/images/snowflake_background.svg"
           />
         </div>
         <div
-          className="logo logo"
-          style={
-            Object {
-              "transform": "translate3d(0px,0px,0)",
-            }
-          }
+          class="logo logo"
+          style="transform: translate3d(0px,0px,0);"
         >
           <img
-            className="logo logo"
+            class="logo logo"
             src="/static/assets/images/snowflake_s.svg"
           />
         </div>
       </div>
       <h1
-        className="title"
+        class="title"
       >
         Snowflake Webdesign
       </h1>
       <h2
-        className="subtitle"
+        class="subtitle"
       >
         For a life full of fluffiness
       </h2>
     </div>
   </div>
   <div
-    className="hero-foot has-text-centered"
+    class="hero-foot has-text-centered"
   >
     <div
-      onMouseDown={[Function]}
-      onTouchStart={[Function]}
-      style={
-        Object {
-          "transform": "translate3d(0px,0px,0)",
-        }
-      }
+      class="ripplePlaceholder"
     >
-      <div
-        className="ripplePlaceholder"
+      <a
+        class="button is-success button nextButton"
         data-testid="landing-cta"
       >
-        <a
-          className="button is-success button nextButton"
-          onClick={[Function]}
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-arrow-down fa-w-14 "
+          data-icon="arrow-down"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-arrow-down fa-w-14 "
-            data-icon="arrow-down"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </a>
-        <div
-          className="ripple"
-        />
-        <div
-          className="rippleDelay"
-        />
-      </div>
+          <path
+            d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
+      <div
+        class="ripple"
+      />
+      <div
+        class="rippleDelay"
+      />
     </div>
   </div>
 </section>

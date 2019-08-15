@@ -2,7 +2,6 @@ import classNames from "classnames";
 import jump from "jump.js";
 import React from "react";
 import { animated, useSpring } from "react-spring";
-import { useGesture } from "react-use-gesture";
 
 import { sendEvent as sendFullStoryEvent } from "../analytics/full-story";
 import { sendEvent as sendGoogleAnalyticsEvent } from "../analytics/google-analytics";
@@ -44,12 +43,6 @@ function Landing() {
     xy: [0, 0]
   }));
 
-  const { local } = props;
-
-  const bind = useGesture({
-    onDrag: ({ local: gestureLocal }) => set({ local: gestureLocal })
-  });
-
   function handleMouseMove({
     clientX: x,
     clientY: y
@@ -68,7 +61,7 @@ function Landing() {
           <div className={styles.logoContainer}>
             <animated.div
               style={{
-                transform: props.xy.interpolate(trans1)
+                transform: props.xy.to(trans1)
               }}
               className={classNames("logo", styles.logo)}
             >
@@ -79,7 +72,7 @@ function Landing() {
             </animated.div>
             <animated.div
               style={{
-                transform: props.xy.interpolate(trans2)
+                transform: props.xy.to(trans2)
               }}
               className={classNames("logo", styles.logo)}
             >
@@ -94,16 +87,7 @@ function Landing() {
         </div>
       </div>
       <div className="hero-foot has-text-centered">
-        <animated.div
-          {...bind()}
-          style={{
-            transform: local.interpolate(
-              (x: number, y: number) => `translate3d(${x}px,${y}px,0)`
-            )
-          }}
-        >
-          <RippleButton data-testid="landing-cta" onClick={navToPortfolio} />
-        </animated.div>
+        <RippleButton data-testid="landing-cta" onClick={navToPortfolio} />
       </div>
     </section>
   );

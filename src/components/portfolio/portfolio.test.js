@@ -1,12 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import renderer from "react-test-renderer";
-import { render, fireEvent, cleanup } from "react-testing-library";
+import { render, fireEvent, cleanup } from "@testing-library/react";
 import * as fullStory from "../analytics/full-story";
 import * as mixpanel from "../analytics/mixpanel";
-
-// add custom jest matchers from jest-dom
-import "jest-dom/extend-expect";
 
 import Portfolio from "./portfolio";
 

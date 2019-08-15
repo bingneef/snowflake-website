@@ -9,7 +9,7 @@ import styles from "./ripple-button.module.scss";
 
 library.add(faArrowDown);
 
-function RippleButton({ onClick, ...props }: Props) {
+function RippleButton({ onClick, "data-testid": dataTestid, ...props }: Props) {
   return (
     <div className={styles.ripplePlaceholder} {...props}>
       <a
@@ -18,6 +18,7 @@ function RippleButton({ onClick, ...props }: Props) {
           styles.button,
           styles.nextButton
         )}
+        data-testid={dataTestid}
         onClick={onClick}
       >
         <FontAwesomeIcon icon="arrow-down" />
@@ -29,10 +30,12 @@ function RippleButton({ onClick, ...props }: Props) {
 }
 
 interface Props {
+  "data-testid": string;
   onClick: () => void;
 }
 
 RippleButton.propTypes = {
+  "data-testid": PropTypes.string,
   onClick: PropTypes.func.isRequired
 };
 
