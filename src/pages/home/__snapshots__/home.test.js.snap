@@ -95,7 +95,7 @@ exports[`Home matches the snapshot 1`] = `
           >
             <img
               className="logo logo"
-              src="/static/assets/images/snowflake_s.svg"
+              src="/static/assets/images/snowflake_S.svg"
             />
           </div>
         </div>
