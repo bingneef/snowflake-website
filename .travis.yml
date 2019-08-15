@@ -11,6 +11,10 @@ stages:
   - test
   - build
   - lint
+addons:
+  apt:
+    packages:
+    - libgconf-2-4
 jobs:
   include:
     - stage: test
